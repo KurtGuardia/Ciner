@@ -1,317 +1,207 @@
-<<<<<<< HEAD
-*{margin: 0;}
-
-body {
-    background-color: #1F2635;
+* {
+  margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+body {
+  background-color: #1f2635;
+}
 
 /* ---------------------------- CINER-ELLA ---------------------------- */
-.logo { text-align: center;}
+.container {
+  width: 96%;
+  margin: 0 4%;
+}
+
+.logo {
+  text-align: center;
+}
 
 .ciner-ella__logo {
-    padding: 30px;
-    width: 344px;
-    height: 266px;
-    text-align: center;
-    /*left: 548px;
+  padding: 30px;
+  width: 344px;
+  height: 266px;
+  text-align: center;
+  /*left: 548px;
     top: 104px;*/
 }
 
 .ciner-ella__first {
-    padding-left: 157px;
-    padding-bottom: 50px;
-    width: 1190px;
+  padding-left: 157px;
+  padding-bottom: 50px;
+  width: 1190px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.135em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .women2 {
-    padding-left: 157px;
-    padding-top: 50px;
-    width: 420.72px;
+  padding-left: 157px;
+  padding-top: 50px;
+  width: 420.72px;
 }
 
 .ciner-ella__second {
-    position: absolute;
-    width: 554px;
-    height: 259px;
-    left: 706px;
-    top: 556px;
+  position: absolute;
+  width: 554px;
+  height: 259px;
+  left: 706px;
+  top: 556px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.135em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .ciner-ella__third {
-    position: absolute;
-    width: 536px;
-    height: 240px;
-    left: 152px;
-    top: 957px;
+  position: absolute;
+  width: 536px;
+  height: 240px;
+  left: 152px;
+  top: 957px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.135em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .women4 {
-    position: absolute;
-    width: 419.95px;
-    height: 280px;
-    left: 788px;
-    top: 932px;
+  position: absolute;
+  width: 419.95px;
+  height: 280px;
+  left: 788px;
+  top: 932px;
 }
 
 .women3 {
-    position: absolute;
-    width: 419.8px;
-    height: 280px;
-    left: 152px;
-    top: 1323px;
+  position: absolute;
+  width: 419.8px;
+  height: 280px;
+  left: 152px;
+  top: 1323px;
 }
 
 .ciner-ella__fourth {
-    position: absolute;
-    width: 580px;
-    height: 340px;
-    left: 685px;
-    top: 1293px;
+  position: absolute;
+  width: 580px;
+  height: 340px;
+  left: 685px;
+  top: 1293px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.135em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .ciner-ella__fifth {
-    position: absolute;
-    width: 552px;
-    height: 180px;
-    left: 136px;
-    top: 1817px;
+  position: absolute;
+  width: 552px;
+  height: 180px;
+  left: 136px;
+  top: 1817px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.135em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .women1 {
-    position: absolute;
-    width: 420px;
-    height: 280.03px;
-    left: 788px;
-    top: 1737px;
+  position: absolute;
+  width: 420px;
+  height: 280.03px;
+  left: 788px;
+  top: 1737px;
 }
 
 .invitation {
-    position: absolute;
-    width: 1190px;
-    height: 60px;
-    left: 125px;
-    top: 2151px;
+  position: absolute;
+  width: 1190px;
+  height: 60px;
+  left: 125px;
+  top: 2151px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.135em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
 
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .impact {
-    position: absolute;
-    width: 737px;
-    height: 40px;
-    left: 578px;
-    
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.135em;
-
-    color: #FFFFFF;
-}
-
-.impact-1{ top: 2264px; }
-.impact-2{ top: 2321px; }
-.impact-3{ top: 2383px; }
-.impact-4 { top: 2445px; }
-
-.arrow{
-    position: absolute;
-    width: 29px;
-    height: 0px;
-    left: 518px; 
-    box-sizing: border-box; 
-    border: 3px solid #FFFFFF;
-}
-
-.arrow-1 { top: 2279px; }
-.arrow-2{ top: 2341px; }
-.arrow-3{ top: 2403px; }
-.arrow-4 { top: 2465px; }
-=======
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #fff;
-  color: #555;
-  font-weight: 300;
-  font-size: 20px;
-  text-rendering: optimizeLegibility;
-  overflow-x: hidden;
-}
-
-header {
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 7, 0.7)),
-      to(rgba(0, 0, 7, 0.7))
-    ),
-    url(./Img/hero-img-1.png);
-  background-image: linear-gradient(rgba(0, 0, 7, 0.7), rgba(0, 0, 7, 0.7)),
-    url(./Img/hero-img-1.png);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  background-attachment: fixed;
-}
-
-.row {
   position: absolute;
-  top: 3%;
-  left: 2%;
-  transform: translateX(0.5%);
-  width: 95%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.16);
-}
+  width: 737px;
+  height: 40px;
+  left: 578px;
 
-.main-nav {
-  display: flex;
-  list-style: none;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-  margin-left: 1rem;
-  color: #b8b8b8;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 20px;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: border-bottom 0.4s;
-  transition: border-bottom 0.4s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-  color: #feb221;
-  border-bottom: 2px solid #feb221;
-}
-
-.text-box {
-  width: 70%;
-  text-align: center;
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.text-box h1 {
-  font-size: 3.5rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
-
-.text-box h2 {
-  font-size: 1.7rem;
-  font-weight: 300;
-  margin-bottom: 5rem;
-}
-
-.text-box a {
-  width: 200px;
-}
-
-.btn {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: bold;
-  margin: 0 2rem;
-  text-decoration: none;
-  padding: 10px 2.5rem;
-  border: 2px solid #feb221;
-  border-radius: 50px;
-  color: #feb221;
-  transition: all 0.3s;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
+
+  color: #ffffff;
 }
 
-.btn-full {
-  color: #fff;
-  background-color: #feb221;
+.impact-1 {
+  top: 2264px;
+}
+.impact-2 {
+  top: 2321px;
+}
+.impact-3 {
+  top: 2383px;
+}
+.impact-4 {
+  top: 2445px;
 }
 
-.btn:hover {
-  color: #fff;
-  border: 2px solid #eea010;
-  background-color: #eea010;
+.arrow {
+  position: absolute;
+  width: 29px;
+  height: 0px;
+  left: 518px;
+  box-sizing: border-box;
+  border: 3px solid #ffffff;
 }
->>>>>>> master
+
+.arrow-1 {
+  top: 2279px;
+}
+.arrow-2 {
+  top: 2341px;
+}
+.arrow-3 {
+  top: 2403px;
+}
+.arrow-4 {
+  top: 2465px;
+}
