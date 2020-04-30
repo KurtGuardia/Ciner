@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #555;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 7, 0.7)),
+      to(rgba(0, 0, 7, 0.7))
+    ),
+    url(../resources/images/hero-img-1.png);
+  background-image: linear-gradient(rgba(0, 0, 7, 0.7), rgba(0, 0, 7, 0.7)),
+    url(../resources/images/hero-img-1.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.row {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  transform: translateX(0.5%);
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  margin: 0 1rem;
+  color: #b8b8b8;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.4s;
+  transition: border-bottom 0.4s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  color: #feb221;
+  border-bottom: 2px solid #feb221;
+}
+
+.text-box {
+  width: 70%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-box h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.text-box h2 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
+
+.text-box a {
+  width: 200px;
+}
+
+.btn {
+  font-weight: bold;
+  margin: 0 2rem;
+  text-decoration: none;
+  padding: 10px 2.5rem;
+  border: 2px solid #feb221;
+  border-radius: 50px;
+  color: #feb221;
+  transition: all 0.3s;
+}
+
+.btn-full {
+  color: #fff;
+  background-color: #feb221;
+}
+
+.btn:hover {
+  color: #fff;
+  border: 2px solid #eea010;
+  background-color: #eea010;
+}

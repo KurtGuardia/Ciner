@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #1f2635;
+}
+
+/* ---------------------------- CINER-ELLA ---------------------------- */
+.container {
+  width: 96%;
+  margin: 0 4%;
+}
+
+.logo {
+  text-align: center;
+}
+
+.ciner-ella__logo {
+  padding: 30px;
+  width: 344px;
+  height: 266px;
+  text-align: center;
+  /*left: 548px;
+    top: 104px;*/
+}
+
+.ciner-ella__first {
+  padding-left: 157px;
+  padding-bottom: 50px;
+  width: 1190px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
+
+  color: #ffffff;
+}
+
+.women2 {
+  padding-left: 157px;
+  padding-top: 50px;
+  width: 420.72px;
+}
+
+.ciner-ella__second {
+  position: absolute;
+  width: 554px;
+  height: 259px;
+  left: 706px;
+  top: 556px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
+
+  color: #ffffff;
+}
+
+.ciner-ella__third {
+  position: absolute;
+  width: 536px;
+  height: 240px;
+  left: 152px;
+  top: 957px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
+
+  color: #ffffff;
+}
+
+.women4 {
+  position: absolute;
+  width: 419.95px;
+  height: 280px;
+  left: 788px;
+  top: 932px;
+}
+
+.women3 {
+  position: absolute;
+  width: 419.8px;
+  height: 280px;
+  left: 152px;
+  top: 1323px;
+}
+
+.ciner-ella__fourth {
+  position: absolute;
+  width: 580px;
+  height: 340px;
+  left: 685px;
+  top: 1293px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
+
+  color: #ffffff;
+}
+
+.ciner-ella__fifth {
+  position: absolute;
+  width: 552px;
+  height: 180px;
+  left: 136px;
+  top: 1817px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
+
+  color: #ffffff;
+}
+
+.women1 {
+  position: absolute;
+  width: 420px;
+  height: 280.03px;
+  left: 788px;
+  top: 1737px;
+}
+
+.invitation {
+  position: absolute;
+  width: 1190px;
+  height: 60px;
+  left: 125px;
+  top: 2151px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
+
+  color: #ffffff;
+}
+
+.impact {
+  position: absolute;
+  width: 737px;
+  height: 40px;
+  left: 578px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.135em;
+
+  color: #ffffff;
+}
+
+.impact-1 {
+  top: 2264px;
+}
+.impact-2 {
+  top: 2321px;
+}
+.impact-3 {
+  top: 2383px;
+}
+.impact-4 {
+  top: 2445px;
+}
+
+.arrow {
+  position: absolute;
+  width: 29px;
+  height: 0px;
+  left: 518px;
+  box-sizing: border-box;
+  border: 3px solid #ffffff;
+}
+
+.arrow-1 {
+  top: 2279px;
+}
+.arrow-2 {
+  top: 2341px;
+}
+.arrow-3 {
+  top: 2403px;
+}
+.arrow-4 {
+  top: 2465px;
+}
