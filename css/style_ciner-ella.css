@@ -4,14 +4,57 @@
 
 body {
   background-color: #1f2635;
+  font-family: 'Roboto', sans-serif;;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.135em;
+  color: #ffffff;
+  text-align: justify;
 }
+
 
 /* ---------------------------- CINER-ELLA ---------------------------- */
-.container {
-  width: 96%;
-  margin: 0 4%;
+
+/*---------HEADER---------*/
+
+/*Navbar*/
+.row {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.16);
 }
 
+.main-nav {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  margin: 0 1rem;
+  color: #b8b8b8;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.4s;
+  transition: border-bottom 0.4s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  color: #feb221;
+  border-bottom: 2px solid #feb221;
+}
+
+/*Ciner-Ella Logo*/
 .logo {
   text-align: center;
 }
@@ -20,188 +63,82 @@ body {
   padding: 30px;
   width: 344px;
   height: 266px;
-  text-align: center;
-  /*left: 548px;
-    top: 104px;*/
+}
+
+/*---------Body---------*/
+
+.container {
+  width: auto;
+  margin: 0 4%;
 }
 
 .ciner-ella__first {
-  padding-left: 157px;
-  padding-bottom: 50px;
-  width: 1190px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.135em;
-
-  color: #ffffff;
+  padding: 0 0.9rem 3.125rem 0.9rem;
 }
 
-.women2 {
-  padding-left: 157px;
-  padding-top: 50px;
-  width: 420.72px;
+.second,
+.third,
+.fourth,
+.fifth { 
+  display: flex;
+  padding: 5.125rem;
+  align-items: center;
+}
+
+.women2,
+.women3{ 
+  max-width: 32.295rem; 
+  padding-right: 3.125rem;
+}
+
+.women4,
+.women1 {
+  max-width: 32.295rem; 
+  padding-left: 3.125rem;
+  animation-name: bounceInLeft;
+}
+
+.women3{
+  max-height: 23.125rem;
 }
 
 .ciner-ella__second {
-  position: absolute;
-  width: 554px;
-  height: 259px;
-  left: 706px;
-  top: 556px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.135em;
-
-  color: #ffffff;
+ padding-left: 3.125rem;
 }
 
 .ciner-ella__third {
-  position: absolute;
-  width: 536px;
-  height: 240px;
-  left: 152px;
-  top: 957px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.135em;
-
-  color: #ffffff;
-}
-
-.women4 {
-  position: absolute;
-  width: 419.95px;
-  height: 280px;
-  left: 788px;
-  top: 932px;
-}
-
-.women3 {
-  position: absolute;
-  width: 419.8px;
-  height: 280px;
-  left: 152px;
-  top: 1323px;
+  padding-right: 3.125rem;
 }
 
 .ciner-ella__fourth {
-  position: absolute;
-  width: 580px;
-  height: 340px;
-  left: 685px;
-  top: 1293px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.135em;
-
-  color: #ffffff;
+  padding-left: 3.125rem;
 }
 
 .ciner-ella__fifth {
-  position: absolute;
-  width: 552px;
-  height: 180px;
-  left: 136px;
-  top: 1817px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.135em;
-
-  color: #ffffff;
+  padding-right: 3.125rem;
 }
 
-.women1 {
-  position: absolute;
-  width: 420px;
-  height: 280.03px;
-  left: 788px;
-  top: 1737px;
+.invitation{
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+
+}
+.impacts {
+display: block;
+float: right;
+max-width: 65%
 }
 
-.invitation {
-  position: absolute;
-  width: 1190px;
-  height: 60px;
-  left: 125px;
-  top: 2151px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.135em;
-
-  color: #ffffff;
-}
-
-.impact {
-  position: absolute;
-  width: 737px;
-  height: 40px;
-  left: 578px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.135em;
-
-  color: #ffffff;
-}
-
-.impact-1 {
-  top: 2264px;
-}
-.impact-2 {
-  top: 2321px;
-}
-.impact-3 {
-  top: 2383px;
-}
+.impact-1,
+.impact-2,
+.impact-3,
 .impact-4 {
-  top: 2445px;
+  display: flex;
+  padding: 0.7rem;
 }
 
 .arrow {
-  position: absolute;
-  width: 29px;
-  height: 0px;
-  left: 518px;
-  box-sizing: border-box;
-  border: 3px solid #ffffff;
-}
-
-.arrow-1 {
-  top: 2279px;
-}
-.arrow-2 {
-  top: 2341px;
-}
-.arrow-3 {
-  top: 2403px;
-}
-.arrow-4 {
-  top: 2465px;
+  font-size: 2.1875rem;
+  padding-top: 0.4rem;
+  padding-right: 1.7rem;
 }
