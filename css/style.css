@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
 
+/* ___________________________________ GENERAL ___________________________________ */
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@ body {
   overflow-x: hidden;
 }
 
+/* ___________________________________ HEADER ___________________________________ */
 header {
   background-image: -webkit-gradient(
       linear,
@@ -89,7 +91,7 @@ header {
 .text-box h2 {
   font-size: 1.7rem;
   font-weight: 300;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
 .text-box a {
@@ -116,4 +118,56 @@ header {
   color: #fff;
   border: 2px solid #eea010;
   background-color: #eea010;
+}
+
+/* ___________________________________ QUIENES SOMOS ___________________________________ */
+#quienes-somos {
+  color: #d0d0d0;
+  background-color: #1f2635;
+}
+
+.section-container {
+  width: 90%;
+  padding: 15vh 0 5vh 0;
+  margin: 0 5%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  color: #feb221;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.section-container p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cards-container {
+  width: 90%;
+  margin: 10vh auto 20vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards-container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #feb221;
+  border-radius: 10px;
+  width: 17rem;
+  height: 25rem;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cards-container .card span {
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
 }
