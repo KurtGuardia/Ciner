@@ -8,3 +8,16 @@ window.addEventListener('scroll', function () {
     document.getElementById('sec-nav').classList.remove('active');
   }
 });
+
+
+/*
+//For Ciner-Ella's animations when scrolloing
+let firstCinerElla = document.getElementsByClassName('first').offsetTop;
+
+window.addEventListener('scroll', function () {
+  let x = document.documentElement.scrollTop;
+  if (x > firstCinerElla) {
+    document.getElementsByClassName('women2').classList.add('slideIn')
+  }
+});
+*/
