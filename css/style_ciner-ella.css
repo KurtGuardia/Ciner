@@ -4,7 +4,7 @@
 
 body {
   background-color: #1f2635;
-  font-family: 'Roboto', sans-serif;;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -13,7 +13,6 @@ body {
   color: #ffffff;
   text-align: justify;
 }
-
 
 /* ---------------------------- CINER-ELLA ---------------------------- */
 
@@ -79,31 +78,31 @@ body {
 .second,
 .third,
 .fourth,
-.fifth { 
+.fifth {
   display: flex;
   padding: 5.125rem;
   align-items: center;
 }
 
 .women2,
-.women3{ 
-  max-width: 32.295rem; 
+.women3 {
+  max-width: 32.295rem;
   padding-right: 3.125rem;
 }
 
 .women4,
 .women1 {
-  max-width: 32.295rem; 
+  max-width: 32.295rem;
   padding-left: 3.125rem;
   animation-name: bounceInLeft;
 }
 
-.women3{
+.women3 {
   max-height: 23.125rem;
 }
 
 .ciner-ella__second {
- padding-left: 3.125rem;
+  padding-left: 3.125rem;
 }
 
 .ciner-ella__third {
@@ -118,15 +117,14 @@ body {
   padding-right: 3.125rem;
 }
 
-.invitation{
+.invitation {
   padding-top: 7rem;
   padding-bottom: 2rem;
-
 }
 .impacts {
-display: block;
-float: right;
-max-width: 65%
+  display: block;
+  float: right;
+  max-width: 65%;
 }
 
 .impact-1,
