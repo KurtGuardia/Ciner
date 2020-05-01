@@ -121,6 +121,48 @@ header {
 }
 
 /* ___________________________________ QUIENES SOMOS ___________________________________ */
+.sec-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #364974;
+  z-index: 10;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-mini {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.sec-nav .nav-mini li a {
+  text-decoration: none;
+  color: #d0d0d0;
+  padding-bottom: 3px;
+  transition: all 0.3s;
+}
+
+.sec-nav .nav-mini li a:hover {
+  color: #feb221;
+  border-bottom: 1px solid #feb221;
+}
+
+#sec-nav {
+  display: none;
+}
+
+#sec-nav.active {
+  display: flex;
+}
+
 #quienes-somos {
   color: #d0d0d0;
   background-color: #1f2635;
@@ -128,7 +170,7 @@ header {
 
 .section-container {
   width: 90%;
-  padding: 15vh 0 5vh 0;
+  padding: 17vh 0 5vh 0;
   margin: 0 5%;
   text-align: center;
 }
@@ -153,21 +195,59 @@ section h2 {
   justify-content: space-around;
 }
 
-.cards-container .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #feb221;
-  border-radius: 10px;
+.card-container {
+  position: relative;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
   width: 17rem;
   height: 25rem;
-  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.3);
 }
 
-.cards-container .card span {
+.card-container .card {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.card-container .card:hover {
+  transform: rotateY(-180deg);
+}
+
+.card-container .card span {
   margin-top: 2rem;
   color: #fff;
   font-size: 3rem;
   font-weight: bold;
+}
+
+.card-container .card .front,
+.card-container .card .back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #feb221;
+  backface-visibility: hidden;
+  box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-container .card .back {
+  text-align: left;
+  justify-content: space-around;
+  color: #fff;
+  background-color: #1098a8;
+  font-size: 0.9rem;
+  transform: rotateY(180deg);
+}
+
+.card-container .card .back ul {
+  width: 80%;
+  transform: translateX(7%);
 }
