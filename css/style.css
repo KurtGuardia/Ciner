@@ -251,3 +251,30 @@ section h2 {
   width: 80%;
   transform: translateX(7%);
 }
+
+/* ___________________________________ En Que Trabajamos ___________________________________ */
+
+.trabajos {
+  background-color: #000;
+}
+
+.trabajos-row {
+  display: flex;
+}
+
+.trabajos-row .img-container {
+  overflow: hidden;
+  width: 33.33%;
+  display: flex;
+}
+
+.trabajos-row .img-container img {
+  width: 100%;
+  opacity: 0.5;
+  transition: 0.7s;
+}
+
+.trabajos-row .img-container img:hover {
+  opacity: 1;
+  filter: blur(3px);
+}
