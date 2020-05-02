@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,47 +21,51 @@ body {
 /*---------HEADER---------*/
 
 /*Navbar*/
-.row {
-  position: relative;
-  width: auto;
-  margin: 0 auto;
+.sec-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.16);
+  background-color: #364974;
+  z-index: 10;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.main-nav {
+.nav-mini {
+  width: 50%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   list-style: none;
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
-  margin: 0 1rem;
-  color: #b8b8b8;
+.sec-nav .nav-mini li a {
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 20px;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: border-bottom 0.4s;
-  transition: border-bottom 0.4s;
+  color: #d0d0d0;
+  padding-bottom: 3px;
+  transition: all 0.3s;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active {
+.sec-nav .nav-mini li a:hover {
   color: #feb221;
-  border-bottom: 2px solid #feb221;
+  border-bottom: 1px solid #feb221;
+}
+
+#sec-nav.active {
+  display: flex;
 }
 
 /*Ciner-Ella Logo*/
 .logo {
   text-align: center;
+  padding-top: 8rem;
 }
 
 .ciner-ella__logo {
-  padding: 30px;
   width: 344px;
   height: 266px;
 }
@@ -151,8 +157,8 @@ body {
 }
 
 .impact-4 a:hover{
-  color: aqua;
-  border-bottom: 1px solid aqua;
+  color: #1098A8;
+  border-bottom: 1px solid #1098A8;
 }
 
 .arrow {
@@ -173,7 +179,7 @@ img{
   transition: transform 1.5s;
 }
 
-img:hover {
+img:hover:not(:last-child) {
   transform: scale(1.2);
 }
 

@@ -1,19 +1,19 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    /*background for Biblioteca*/
-    background-image: linear-gradient(rgba(0, 0, 7, 0.7), rgba(0, 0, 7, 0.7)), url(../resources/images/Picking_out_a_book.jpg);
-    background-size: cover;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 25px;
-    letter-spacing: 0.135em;
-    color: #ffffff;
-    text-align: justify;
+  /*background for Biblioteca*/
+  background-image: linear-gradient(rgba(0, 0, 7, 0.7), rgba(0, 0, 7, 0.7)), url(../resources/images/Picking_out_a_book.jpg);
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.135em;
+  color: #ffffff;
+  text-align: justify;
 }
 
 /* ---------------------------- BIBLIOTECA ---------------------------- */
@@ -21,82 +21,87 @@ body {
 /*---------HEADER---------*/
 
 
-
 /*Navbar*/
-.row {
-    position: relative;
-    width: auto;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.16);
+.sec-nav {
+width: 97%;
+position: fixed;
+top: 0;
+left: 0;
+padding: 0.5rem 2rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: rgba(255, 255, 255, 0.16);;
+z-index: 10;
+box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.main-nav {
-    display: flex;
-    list-style: none;
+.nav-mini {
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+list-style: none;
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
-    margin: 0 1rem;
-    color: #b8b8b8;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: border-bottom 0.4s;
-    transition: border-bottom 0.4s;
+.sec-nav .nav-mini li a {
+text-decoration: none;
+color: #d0d0d0;
+padding-bottom: 3px;
+transition: all 0.3s;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active {
-    color: #feb221;
-    border-bottom: 2px solid #feb221;
+.sec-nav .nav-mini li a:hover {
+color: #feb221;
+border-bottom: 1px solid #feb221;
+}
+
+#sec-nav.active {
+  display: flex;
 }
 
 /*Content*/
 .content{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .content h2{
-    font-size: 3rem;
-    font-weight: 300;
-    color: #feb221;
-    padding: 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #feb221;
+  padding: 2rem;
+  text-transform: uppercase;
 }
 
 .content p{
-    padding: 2rem 8rem;
-    text-align: justify;
-    font-weight: 500;
+  padding: 2rem 8rem;
+  text-align: justify;
+  font-weight: 500;
 }
 
 .content a{
-    margin: 2rem auto;
+  margin: 2rem auto;
 }
 
 /*Button*/
 .btn {
-    font-weight: bold;
-    margin: 0 2rem;
-    text-decoration: none;
-    padding: 10px 2.5rem;
-    border: 2px solid #feb221;
-    border-radius: 50px;
-    color: #feb221;
-    transition: all 0.3s;
+  font-weight: bold;
+  margin: 0 2rem;
+  text-decoration: none;
+  padding: 10px 2.5rem;
+  border: 2px solid #feb221;
+  border-radius: 50px;
+  color: #feb221;
+  transition: all 0.3s;
 }
 
 .btn:hover {
-    color: #fff;
-    border: 2px solid #eea010;
-    background-color: #eea010;
-  }
+  color: #fff;
+  border: 2px solid #eea010;
+  background-color: #eea010;
+}
 
 

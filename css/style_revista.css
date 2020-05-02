@@ -1,0 +1,108 @@
+/* ___________________________________ GENERAL ___________________________________ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1f2635;
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+  
+/*Navbar*/
+.sec-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #364974;
+  z-index: 10;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-mini {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.sec-nav .nav-mini li a {
+  text-decoration: none;
+  color: #d0d0d0;
+  padding-bottom: 3px;
+  transition: all 0.3s;
+}
+
+.sec-nav .nav-mini li a:hover {
+  color: #feb221;
+  border-bottom: 1px solid #feb221;
+}
+
+#sec-nav.active {
+  display: flex;
+}
+
+.container{
+  margin-top: 9rem;
+  text-align: center;
+}
+
+h2{
+  font-size: 3rem;
+  font-weight: 300;
+  color: #feb221;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+.card{
+  margin-top: 2rem;
+  padding: 3rem 3rem 3rem 0rem;
+  border-top: 1px solid #fff;
+  display: inline-block;
+  width: 80%;
+}
+
+.face{
+  float: left;
+  margin-right: 5rem;
+}
+
+.revista{
+  
+}
+
+.text{
+  text-align: left;
+}
+
+h3{
+  padding-bottom: 2rem; 
+}
+
+p{
+  width: 100%;
+}
+
+span{
+  font-size: 0.9rem;
+  color: #1098A8;
+  transition: color .5s;
+}
+
+span:hover{
+  color: #feb221;
+  cursor: pointer;
+}
