@@ -8,7 +8,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #1f2635;
-  color: #555;
+  color: #fff;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
@@ -56,9 +56,7 @@ body {
 
 .container{
   margin-top: 9rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: center;
 }
 
 h2{
@@ -67,4 +65,44 @@ h2{
   color: #feb221;
   padding: 2rem;
   text-transform: uppercase;
+}
+
+.card{
+  margin-top: 2rem;
+  padding: 3rem 3rem 3rem 0rem;
+  border-top: 1px solid #fff;
+  display: inline-block;
+  width: 80%;
+}
+
+.face{
+  float: left;
+  margin-right: 5rem;
+}
+
+.revista{
+  
+}
+
+.text{
+  text-align: left;
+}
+
+h3{
+  padding-bottom: 2rem; 
+}
+
+p{
+  width: 100%;
+}
+
+span{
+  font-size: 0.9rem;
+  color: #1098A8;
+  transition: color .5s;
+}
+
+span:hover{
+  color: #feb221;
+  cursor: pointer;
 }
