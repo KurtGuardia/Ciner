@@ -162,8 +162,19 @@ body {
 }
 
 .logo-pequeño{
-  width: 10rem;
+  max-width: 10rem;
   align-self: center;
+  padding: 1rem;
+}
+
+img{
+  width: 100%;
+  transform: scale(1);
+  transition: transform 1.5s;
+}
+
+img:hover {
+  transform: scale(1.2);
 }
 
 @keyframes slideInLeft {
