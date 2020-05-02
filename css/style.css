@@ -143,7 +143,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 4%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -153,7 +153,7 @@ header {
 }
 
 .nav-mini {
-  width: 50%;
+  width: 55%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -293,8 +293,9 @@ section h2 {
 }
 
 .trabajos-row .img-container img:hover {
-  opacity: 1;
-  filter: blur(3px);
+  opacity: 1 !important;
+  filter: blur(3px) !important;
+  transform: scale(1.03);
 }
 
 .description {
