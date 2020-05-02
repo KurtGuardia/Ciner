@@ -209,7 +209,7 @@ section h2 {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: all 0.8s ease;
+  transition: all 0.5s linear;
 }
 
 .card-container .card:hover {
@@ -266,6 +266,7 @@ section h2 {
   overflow: hidden;
   width: 33.33%;
   display: flex;
+  position: relative;
 }
 
 .trabajos-row .img-container img {
@@ -277,4 +278,23 @@ section h2 {
 .trabajos-row .img-container img:hover {
   opacity: 1;
   filter: blur(3px);
+}
+
+.description {
+  width: 75%;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(0, 0, 7, 0.7);
+  padding: 15px;
+  opacity: 0;
+  z-index: 20;
+  transition: all 0.7s;
+}
+
+.description.active {
+  opacity: 1;
 }

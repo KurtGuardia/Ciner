@@ -9,6 +9,27 @@ window.addEventListener('scroll', function () {
   }
 });
 
+let contArr = [...document.querySelectorAll('.img-container')];
+
+contArr.map((img, index) => {
+  img.addEventListener('mouseover', () => {
+    let descArr = [...document.querySelectorAll('.description')];
+    for (let i = 0; i < descArr.length; i++) {
+      if (index === i) {
+        descArr[i].classList.add('active');
+      }
+    }
+  });
+});
+
+contArr.map((img) => {
+  img.addEventListener('mouseout', () => {
+    let descArr = [...document.querySelectorAll('.description')];
+    for (let i = 0; i < descArr.length; i++) {
+      descArr[i].classList.remove('active');
+    }
+  });
+});
 
 /*
 //For Ciner-Ella's animations when scrolloing
