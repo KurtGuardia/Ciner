@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
   
+::selection{
+  color: #ffc75e;
+  background-color: #1098A8;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #1f2635;
@@ -64,24 +69,30 @@ h2{
   font-weight: 300;
   color: #feb221;
   padding: 2rem;
+  margin-bottom: 5rem;
   text-transform: uppercase;
 }
 
+.intro{
+  text-align: justify;
+  margin: 5rem;
+}
+
 .card{
-  margin-top: 2rem;
-  padding: 3rem 3rem 3rem 0rem;
+  margin: auto;
+  padding: 3rem;
   border-top: 1px solid #fff;
-  display: inline-block;
+  display: flex;
   width: 80%;
 }
 
 .face{
-  float: left;
   margin-right: 5rem;
+  align-self: center;
 }
 
 .revista{
-  
+
 }
 
 .text{
@@ -94,6 +105,7 @@ h3{
 
 p{
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 span{
