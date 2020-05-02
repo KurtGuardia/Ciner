@@ -19,6 +19,16 @@ contArr.map((img, index) => {
         descArr[i].classList.add('active');
       }
     }
+    let box = document.querySelector('.description.active');
+    box.addEventListener('mouseover', () => {
+      img.firstElementChild.style.filter = 'blur(3px)';
+      img.firstElementChild.style.opacity = '1';
+    });
+    box.addEventListener('mouseout', () => {
+      img.firstElementChild.style.filter = 'blur(0px)';
+      img.firstElementChild.style.opacity = '0.5';
+      img.firstElementChild.style.transform = 'scale(1.03)';
+    });
   });
 });
 
