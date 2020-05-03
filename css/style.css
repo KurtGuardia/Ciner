@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  color: #ffc75e;
+  background-color: #1098a8;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #1f2635;
@@ -381,4 +386,40 @@ section h2 {
     top: 73%;
     left: 20%;
   }
+}
+
+/* ___________________________________ Enlaces ___________________________________ */
+
+section .enlaces {
+  padding: 3rem;
+}
+
+.enlaces h2 {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.enlaces .links {
+  width: 60%;
+  margin: 5% 20%;
+  list-style: none;
+}
+
+.enlaces .links li {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.enlaces .links li span {
+  margin-right: 1rem;
+}
+
+.enlaces .links li a {
+  text-decoration: none;
+  color: #c9c9c9;
+}
+
+.enlaces .links li span:hover,
+.enlaces .links li a:hover {
+  color: #feb221;
 }
