@@ -316,3 +316,69 @@ section h2 {
 .description.active {
   opacity: 1;
 }
+
+/* ___________________________________ Informacion ___________________________________ */
+
+.info__bubbles {
+  background-color: #feb221;
+  height: 45vh;
+  position: relative;
+}
+.info__bubbles h2 {
+  padding: 3rem 0;
+  font-size: 2.2rem;
+  color: #1f2635;
+  text-align: center;
+}
+.info__bubbles-row {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 65%;
+  left: 15%;
+}
+.info-item .bubble {
+  cursor: pointer;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: #1f2635;
+  position: relative;
+  transition: all 0.3s;
+}
+.info-item .bubble:hover {
+  background: #343f58;
+}
+.info-item .bubble img {
+  height: 8rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.info__bubbles-row .info-item p {
+  color: #ffa600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.7rem;
+}
+.info__biblio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/resources/images/biblioteca-bg.png);
+  background-size: cover;
+  width: 100%;
+  height: 45vh;
+}
+
+@media (min-width: 1400px) {
+  .info__bubbles-row {
+    width: 60%;
+    top: 73%;
+    left: 20%;
+  }
+}
