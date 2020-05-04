@@ -495,3 +495,20 @@ section .enlaces {
   background-size: cover;
   background-position: center;
 }
+
+/* ___________________________________ Aliados ___________________________________ */
+
+.aliados {
+  padding: 3rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../resources/images/aliados-bg.png);
+  background-size: cover;
+}
+
+.aliados-row {
+  width: 90%;
+  margin: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
