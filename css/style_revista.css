@@ -91,8 +91,8 @@ h2{
   align-self: center;
 }
 
-.revista{
-
+.magazine{
+  max-width: 9.375rem;
 }
 
 .text{
@@ -108,13 +108,15 @@ p{
   margin-bottom: 1rem;
 }
 
-span{
+a:link,
+a:visited{
   font-size: 0.9rem;
   color: #1098A8;
-  transition: color .5s;
+  transition: color .3s;
+  text-decoration: none;
 }
 
-span:hover{
+a:hover{
   color: #feb221;
   cursor: pointer;
 }
