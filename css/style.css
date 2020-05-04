@@ -506,9 +506,86 @@ section .enlaces {
 }
 
 .aliados-row {
-  width: 90%;
-  margin: 0 5%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* ___________________________________ footer ___________________________________ */
+
+footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+
+.footer-row-1 {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.footer-row-1 > div {
+  text-align: center;
+  width: 33%;
+}
+
+.footer-row-1 .logo-box img {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.footer-row-1 .footer-info {
+  text-align: left;
+}
+
+.footer-row-1 .logo-box img:hover {
+  opacity: 1;
+}
+
+.footer-contact-conteiner {
+  width: 50%;
+  margin: 0 25%;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-media {
+  width: 80%;
+  margin: 2rem 10% 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-media a img {
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.social-media a img:hover {
+  opacity: 1;
+}
+
+.footer-row-2 {
+  text-align: center;
+}
+
+.footer-row-2 p span a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.footer-row-2 p span a:hover {
+  color: #fff;
 }
