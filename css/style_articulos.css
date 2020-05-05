@@ -99,10 +99,25 @@ h4{
     font-size: 1.8rem;
     font-weight: 300;
     letter-spacing: 0.2rem;
+    padding-bottom: 0.9rem;
 }
 
-p{
+h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
 
+    color: #feb121a6;
+}
+
+h5:not(:first-child){
+    padding: 2.9rem 0 0.5rem 0;    
+}
+
+.author{
+    margin-top: -1.5rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.753);
 }
 
 .downarrow{
@@ -132,6 +147,20 @@ p{
     border-top: 1px solid #fff;
     background-color: #feb1213b;
     padding: 2rem;
+}
+
+a:link,
+a:visited{
+    font-weight: 600;
+    letter-spacing: 0.13rem;
+    color: #1098A8;
+    transition: color .3s;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #feb221;
+    cursor: pointer;
 }
 
 @keyframes pulse {
