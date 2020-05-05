@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::selection {
   color: #ffc75e;
   background-color: #1098a8;
@@ -23,34 +27,46 @@ body {
 }
 
 /* ___________________________________ HEADER ___________________________________ */
-header {
-  /* background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 7, 0.7)),
-      to(rgba(0, 0, 7, 0.7))
-    ),
-    url(../resources/images/bg-1.png);
-  background-image: linear-gradient(rgba(0, 0, 7, 0.7), rgba(0, 0, 7, 0.7)),
-    url(../resources/images/bg-1.png); */
-  background-image: linear-gradient(rgba(0, 0, 7, 0.8), rgba(0, 0, 7, 0.8));
-  background-size: cover;
-  background-position: center;
+#slideshow {
+  width: 100%;
   height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBg 15s linear infinite 0s;
+  animation-timing-function: cubic-bezier(1, 0, 0.3, 1);
+  background-image: url(../resources/images/bg-1.jpg);
   background-attachment: fixed;
+  z-index: -1;
 }
 
-.slideshow {
-  position: relative;
-  width: 100%;
-  height: 100%;
+@keyframes slideBg {
+  0% {
+    background-image: url(../resources/images/bg-1.jpg);
+  }
+  33% {
+    background-image: url(../resources/images/bg-2.jpg);
+  }
+  66% {
+    background-image: url(../resources/images/bg-3.jpg);
+  }
+  100% {
+    background-image: url(../resources/images/bg-1.jpg);
+  }
 }
-.slideshow img {
+
+header {
+  position: relative;
+}
+
+header #darkfilter {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  z-index: -1;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
 .row {
@@ -330,7 +346,7 @@ section h2 {
   position: relative;
 }
 .info__bubbles h2 {
-  padding: 3rem 0;
+  padding: 6rem 0 3rem 0;
   font-size: 2.2rem;
   color: #1f2635;
   text-align: center;
@@ -391,12 +407,12 @@ section h2 {
 /* ___________________________________ Enlaces ___________________________________ */
 
 section .enlaces {
-  padding: 3rem;
+  padding: 6rem 0 3rem 0;
 }
 
 .enlaces h2 {
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 .enlaces .links {
@@ -427,6 +443,7 @@ section .enlaces {
 /* ___________________________________ Contact ___________________________________ */
 
 .contact {
+  padding-top: 5rem;
   display: flex;
   width: 100%;
   height: 90vh;
@@ -506,9 +523,86 @@ section .enlaces {
 }
 
 .aliados-row {
-  width: 90%;
-  margin: 0 5%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* ___________________________________ footer ___________________________________ */
+
+footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+
+.footer-row-1 {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.footer-row-1 > div {
+  text-align: center;
+  width: 33%;
+}
+
+.footer-row-1 .logo-box img {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.footer-row-1 .footer-info {
+  text-align: left;
+}
+
+.footer-row-1 .logo-box img:hover {
+  opacity: 1;
+}
+
+.footer-contact-conteiner {
+  width: 50%;
+  margin: 0 25%;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-media {
+  width: 80%;
+  margin: 2rem 10% 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-media a img {
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.social-media a img:hover {
+  opacity: 1;
+}
+
+.footer-row-2 {
+  text-align: center;
+}
+
+.footer-row-2 p span a {
+  text-decoration: none;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.footer-row-2 p span a:hover {
+  color: #fff;
 }

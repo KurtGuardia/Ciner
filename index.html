@@ -15,7 +15,8 @@
   <body>
     <!-- __________________________________ Header __________________________________ -->
     <header id="header">
-      <div class="slideshow"></div>
+      <div id="slideshow"></div>
+      <div id="darkfilter"></div>
       <nav>
         <div class="row">
           <a href="#header">
@@ -26,12 +27,12 @@
             />
           </a>
           <ul class="main-nav">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Quienes Somos</a></li>
-            <li><a href="#">Información</a></li>
-            <li><a href="#">Enlaces</a></li>
+            <li><a href="#header">Inicio</a></li>
+            <li><a href="#quienes-somos">Quienes Somos</a></li>
+            <li><a href="#info">Información</a></li>
+            <li><a href="#enlaces">Enlaces</a></li>
             <li><a href="/pages/ciner-ella.html">Ciner-Ella</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#contact">Contacto</a></li>
           </ul>
         </div>
       </nav>
@@ -55,12 +56,12 @@
             />
           </a>
           <ul class="nav-mini">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Quienes Somos</a></li>
-            <li><a href="#">Información</a></li>
-            <li><a href="#">Enlaces</a></li>
+            <li><a href="#header">Inicio</a></li>
+            <li><a href="#quienes-somos">Quienes Somos</a></li>
+            <li><a href="#info">Información</a></li>
+            <li><a href="#enlaces">Enlaces</a></li>
             <li><a href="/pages/ciner-ella.html">Ciner-Ella</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#contact">Contacto</a></li>
           </ul>
         </div>
         <div class="section-container">
@@ -164,8 +165,8 @@
           </div>
           <h2>EN QUE TRABAJAMOS</h2>
         </div>
-        <!-- __________________________________ En Que Trabajamos __________________________________ -->
       </section>
+      <!-- __________________________________ En Que Trabajamos __________________________________ -->
       <section class="trabajos">
         <div class="trabajos-row">
           <div class="img-container">
@@ -209,7 +210,7 @@
         </div>
       </section>
       <!-- __________________________________ Informacion __________________________________ -->
-      <section class="info">
+      <section id="info" class="info">
         <div class="info__bubbles">
           <h2>INFORMACION</h2>
           <div class="info__bubbles-row">
@@ -242,7 +243,7 @@
         <div class="info__biblio"></div>
       </section>
       <!-- __________________________________ Enlaces __________________________________ -->
-      <section class="enlaces">
+      <section id="enlaces" class="enlaces">
         <h2>ENLACES</h2>
         <ul class="links">
           <li>
@@ -283,7 +284,7 @@
         </ul>
       </section>
       <!-- __________________________________ Contact __________________________________ -->
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="contact-box">
           <h2>CONTÁCTENOS</h2>
           <form name="contact" method="POST" data-netlify="true">
@@ -315,41 +316,60 @@
         </div>
       </section>
     </main>
-
-    <!-- __________________________________ Scripts __________________________________ -->
-    <script
-      type="text/javascript"
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
-    ></script>
-    <script type="text/javascript">
-      var images = ['bg-1.png', 'bg-2.jpg', 'bg-3.jpg'];
-      var nextimage = 0;
-
-      doSlideshow();
-
-      function doSlideshow() {
-        if ($('.slideshowimage').length != 0) {
-          $('.slideshowimage').fadeOut(1000, function () {
-            slideshowFadeIn();
-            $(this).remove();
-          });
-        } else {
-          slideshowFadeIn();
-        }
-      }
-      function slideshowFadeIn() {
-        $('.slideshow').prepend(
-          $(
-            '<img class="slideshowimage" src="./resources/images/' +
-              images[nextimage++] +
-              '" style="display:none">'
-          ).fadeIn(1000, function () {
-            setTimeout(doSlideshow, 3000);
-          })
-        );
-        if (nextimage >= images.length) nextimage = 0;
-      }
-    </script>
+    <!-- __________________________________ Footer __________________________________ -->
+    <footer>
+      <div class="footer-row-1">
+        <div class="footer-info">
+          <p>CINER - Centro de Información en Energías</p>
+          <p>Renovables</p>
+          <p>Av. Santa Cruz esq. Beni Nº 1274</p>
+          <p>Edificio Comercial Center, Piso 3, Of. 3</p>
+          <p>Casilla 2762</p>
+          <p>Cochabamba, Bolivia</p>
+        </div>
+        <div class="logo-box">
+          <img src="./resources/ciner-logo-c.svg" alt="footer-logo" />
+        </div>
+        <div class="footer-contact-info">
+          <div class="phone-fax-email">
+            <div class="footer-contact-conteiner">
+              <img src="./resources/icons/phone.png" alt="phone" />
+              <p>+591 4 4280702</p>
+            </div>
+            <div class="footer-contact-conteiner">
+              <img src="./resources/icons/fax.png" alt="fax" />
+              <p>+591 4 4295996</p>
+            </div>
+            <div class="footer-contact-conteiner">
+              <img src="./resources/icons/email.png" alt="email" />
+              <p>ciner@ciner.org</p>
+            </div>
+          </div>
+          <div class="social-media">
+            <a href="#">
+              <img src="./resources/icons/facebook.png" alt="facebook" />
+            </a>
+            <a href="#">
+              <img src="./resources/icons/youtube.png" alt="youtube" />
+            </a>
+            <a href="#">
+              <img src="./resources/icons/twitter.png" alt="twitter" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-row-2">
+        <h3>Copyrght &copy; 2020 CINER</h3>
+        <p>
+          Web site build by
+          <span
+            ><a href="https://github.com/KurtGuardia/Ciner" target="_blank"
+              >ko-soft.com</a
+            ></span
+          >
+        </p>
+      </div>
+    </footer>
     <script src="./js/app.js"></script>
   </body>
 </html>
