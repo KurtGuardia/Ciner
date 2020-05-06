@@ -233,61 +233,58 @@ section h2 {
   justify-content: space-around;
 }
 
-.card-container {
+.card {
+  cursor: pointer;
+  perspective: 100rem;
+  -moz-perspective: 100rem;
   position: relative;
-  perspective: 150rem;
-  -moz-perspective: 150rem;
   width: 17rem;
   height: 25rem;
 }
 
-.card-container .card {
-  position: absolute;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: all 0.5s linear;
-}
-
-.card-container .card:hover {
-  transform: rotateY(-180deg);
-}
-
-.card-container .card span {
-  margin-top: 2rem;
+.card__side {
   color: #fff;
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.card-container .card .front,
-.card-container .card .back {
+  height: 25rem;
+  transition: all 0.8s ease;
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  background-color: #feb221;
   backface-visibility: hidden;
+  border-radius: 10px;
   box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
-.card-container .card .back {
+.card__side--front {
+  background-color: #feb221;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card__side--back {
   text-align: left;
   justify-content: space-around;
-  color: #fff;
   background-color: #1098a8;
   font-size: 0.9rem;
   transform: rotateY(180deg);
 }
 
-.card-container .card .back ul {
+.card__side--back ul {
   width: 80%;
   transform: translateX(7%);
+}
+
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+  transform: rotateY(0deg);
 }
 
 /* ___________________________________ En Que Trabajamos ___________________________________ */
@@ -446,7 +443,7 @@ section .enlaces {
   padding-top: 5rem;
   display: flex;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
 
 .contact .contact-box {
@@ -457,7 +454,7 @@ section .enlaces {
 .contact .contact-box h2 {
   color: #1f2635;
   text-align: center;
-  margin: 3rem 0;
+  margin: 3.7rem 0;
 }
 
 .contact .contact-box form {
