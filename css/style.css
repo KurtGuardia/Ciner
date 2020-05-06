@@ -173,6 +173,10 @@ header #darkfilter {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
+.nav-logo {
+  width: 3.5rem;
+}
+
 .nav-mini {
   width: 55%;
   display: flex;

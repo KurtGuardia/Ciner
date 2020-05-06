@@ -23,12 +23,10 @@ contArr.map((img, index) => {
     box.addEventListener('mouseover', () => {
       img.firstElementChild.style.filter = 'blur(3px)';
       img.firstElementChild.style.opacity = '1';
-      img.firstElementChild.style.transform = 'scale(1.03)';
     });
     box.addEventListener('mouseout', () => {
       img.firstElementChild.style.filter = 'blur(0px)';
       img.firstElementChild.style.opacity = '0.5';
-      img.firstElementChild.style.transform = 'scale(1)';
     });
   });
 });
