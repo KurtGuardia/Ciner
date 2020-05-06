@@ -1,5 +1,5 @@
 /* ___________________________________ GENERAL ___________________________________ */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,11 +11,13 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   background-color: #1f2635;
-  color: #fff;
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.135em;
+  color: #d0d0d0;
+  text-align: justify;  
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
@@ -35,8 +37,12 @@ body {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
+.sec-nav img{
+  width: 3.5rem;
+}
+
 .nav-mini {
-  width: 50%;
+  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,15 +114,15 @@ p{
   margin-bottom: 1rem;
 }
 
-a:link,
-a:visited{
+span a:link,
+span a:visited{
   font-size: 0.9rem;
   color: #1098A8;
   transition: color .3s;
   text-decoration: none;
 }
 
-a:hover{
+span a:hover{
   color: #feb221;
   cursor: pointer;
 }
