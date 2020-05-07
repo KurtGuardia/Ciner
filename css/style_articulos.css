@@ -20,6 +20,8 @@ body {
     text-align: justify;    
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Navbar*/
@@ -73,7 +75,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 7rem;
+    margin: 5rem;
 }
 
 h2{
@@ -81,8 +83,9 @@ h2{
     font-weight: 300;
     color: #feb221;
     padding: 2rem;
-    margin-bottom: 5rem;
+    margin-top: 10rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .articles{
@@ -167,6 +170,14 @@ a:visited{
 a:hover{
     color: #feb221;
     cursor: pointer;
+}
+
+.folleto {
+    width: 40rem;
+}
+
+.folleto img{
+    width: 100%;
 }
 
 @keyframes pulse {
