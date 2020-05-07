@@ -144,18 +144,18 @@ header #darkfilter {
   border: 2px solid #eea010;
   border-radius: 50px;
   color: #feb221;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .btn-full {
-  color: #fff;
-  background-color: #eea010;
+  color: #333;
+  background-color: #feb221;
 }
 
 .btn:hover {
-  color: #fff;
-  border: 2px solid #feb221;
-  background-color: #feb221;
+  color: #333;
+  border: 2px solid #eea010;
+  background-color: #eea010;
 }
 
 /* ___________________________________ QUIENES SOMOS ___________________________________ */
@@ -357,31 +357,6 @@ section h2 {
   opacity: 0.5;
   transition: 0.7s;
 }
-/* 
-.trabajos-row .img-container img:hover {
-  opacity: 1 !important;
-  filter: blur(3px) !important;
-  transform: scale(1.03);
-}
-
-.description {
-  width: 75%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  background-color: rgba(0, 0, 7, 0.7);
-  padding: 15px;
-  opacity: 0;
-  z-index: 20;
-  transition: all 0.7s;
-}
-
-.description.active {
-  opacity: 1;
-} */
 
 /* ___________________________________ Informacion ___________________________________ */
 
@@ -439,14 +414,6 @@ section h2 {
   background-size: cover;
   width: 100%;
   height: 45vh;
-}
-
-@media (min-width: 1400px) {
-  .info__bubbles-row {
-    width: 60%;
-    top: 73%;
-    left: 20%;
-  }
 }
 
 /* ___________________________________ Enlaces ___________________________________ */
@@ -574,6 +541,14 @@ section .enlaces {
   justify-content: space-between;
 }
 
+.aliados-row a img {
+  transition: all 0.3s;
+}
+
+.aliados-row a img:hover {
+  filter: brightness(125%);
+}
+
 /* ___________________________________ footer ___________________________________ */
 
 footer {
@@ -650,4 +625,20 @@ footer {
 
 .footer-row-2 p span a:hover {
   color: #fff;
+}
+
+/* _______________ Responsive Design _______________ */
+
+@media (min-width: 1400px) {
+  .nav-mini {
+    width: 45%;
+  }
+  .info__bubbles-row {
+    width: 60%;
+    top: 73%;
+    left: 20%;
+  }
+  .footer-contact-info > * {
+    width: 65%;
+  }
 }
