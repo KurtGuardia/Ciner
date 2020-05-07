@@ -141,7 +141,7 @@ header #darkfilter {
   margin: 0 2rem;
   text-decoration: none;
   padding: 10px 2.5rem;
-  border: 2px solid #feb221;
+  border: 2px solid #eea010;
   border-radius: 50px;
   color: #feb221;
   transition: all 0.3s;
@@ -149,13 +149,13 @@ header #darkfilter {
 
 .btn-full {
   color: #fff;
-  background-color: #feb221;
+  background-color: #eea010;
 }
 
 .btn:hover {
   color: #fff;
-  border: 2px solid #eea010;
-  background-color: #eea010;
+  border: 2px solid #feb221;
+  background-color: #feb221;
 }
 
 /* ___________________________________ QUIENES SOMOS ___________________________________ */
@@ -301,6 +301,50 @@ section h2 {
   display: flex;
 }
 
+.img-cont {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-cont__img {
+  height: 100%;
+  transition: all 0.5s;
+  opacity: 0.5;
+}
+
+.img-cont__caption {
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.7s;
+  backface-visibility: hidden;
+}
+
+.img-cont__caption p {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.img-cont:hover .img-cont__caption {
+  pointer-events: none;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.img-cont:hover .img-cont__img {
+  transform: scale(1.05);
+  filter: blur(3px);
+  opacity: 1;
+}
+
 .trabajos-row .img-container {
   overflow: hidden;
   width: 33.33%;
@@ -313,7 +357,7 @@ section h2 {
   opacity: 0.5;
   transition: 0.7s;
 }
-
+/* 
 .trabajos-row .img-container img:hover {
   opacity: 1 !important;
   filter: blur(3px) !important;
@@ -337,7 +381,7 @@ section h2 {
 
 .description.active {
   opacity: 1;
-}
+} */
 
 /* ___________________________________ Informacion ___________________________________ */
 
