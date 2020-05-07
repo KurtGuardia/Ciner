@@ -1,5 +1,8 @@
+/* ___________________________________ GENERAL ___________________________________ */
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ::selection{
@@ -8,17 +11,18 @@
 }
 
 body {
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;  
+  line-height: 25px;
+  letter-spacing: 0.135em;
+  color: #d0d0d0;
+  text-align: justify;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
   /*background for Biblioteca*/
   background-image: linear-gradient(rgba(0, 0, 7, 0.7), rgba(0, 0, 7, 0.7)), url(../resources/images/Picking_out_a_book.jpg);
   background-size: cover;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 25px;
-  letter-spacing: 0.135em;
-  color: #ffffff;
-  text-align: justify;
 }
 
 /* ---------------------------- BIBLIOTECA ---------------------------- */
@@ -28,7 +32,7 @@ body {
 
 /*Navbar*/
 .sec-nav {
-width: 97%;
+width: 100%;
 position: fixed;
 top: 0;
 left: 0;
@@ -41,8 +45,12 @@ z-index: 10;
 box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
+.sec-nav img{
+  width: 3.5rem;
+}
+
 .nav-mini {
-width: 50%;
+width: 60%;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -67,7 +75,7 @@ border-bottom: 1px solid #feb221;
 
 /*Content*/
 .content{
-  margin-top: 10rem;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   text-align: center;
