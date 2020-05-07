@@ -20,6 +20,8 @@ body {
     text-align: justify;    
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Navbar*/
@@ -73,7 +75,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 7rem;
+    margin: 5rem;
 }
 
 h2{
@@ -81,12 +83,38 @@ h2{
     font-weight: 300;
     color: #feb221;
     padding: 2rem;
-    margin-bottom: 5rem;
+    margin-top: 10rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
-.articles{
-width: 100%;
+
+#articulos:hover {
+    border-bottom: 0.7px solid #feb221;
+    cursor: pointer;
+}
+
+#noticias:hover {
+    border-bottom: 0.7px solid #feb221;
+    cursor: pointer;
+}
+
+.inDisplay {
+    border-bottom: #feb221 2.5px solid;
+}
+
+.notInDisplay {
+    border-bottom: none;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+}
+
+.shown{
+    display: block;
 }
 
 .article{
@@ -106,13 +134,13 @@ h4{
     font-weight: 300;
     letter-spacing: 0.2rem;
     padding-bottom: 0.9rem;
+    line-height: 2.3rem;
 }
 
 h5{
     font-size: 1.5rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
-
     color: #feb121a6;
 }
 
@@ -131,7 +159,7 @@ h5:not(:first-child){
     float: right;
     font-size: 2.5rem;
     margin-top: -3rem;
-    transition: all 1s;
+    
 }
 
 .downarrow:hover{
@@ -167,6 +195,22 @@ a:visited{
 a:hover{
     color: #feb221;
     cursor: pointer;
+}
+
+.news{
+    background-color: #142a36;
+}
+
+.noticia__titulo{
+    padding: 3rem;
+}
+
+.folleto {
+    width: 40rem;
+}
+
+.folleto img{
+    width: 100%;
 }
 
 @keyframes pulse {
