@@ -22,7 +22,8 @@ body {
   overflow-x: hidden;
   /*background for Biblioteca*/
   background-image: linear-gradient(rgba(0, 0, 7, 0.7), rgba(0, 0, 7, 0.7)), url(../resources/images/Picking_out_a_book.jpg);
-  background-size: cover;
+  background-size: 100vw 100vh;
+  
 }
 
 /* ---------------------------- BIBLIOTECA ---------------------------- */
@@ -118,3 +119,21 @@ border-bottom: 1px solid #feb221;
 }
 
 
+@media(max-width: 420px){
+  
+  body{
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .content{
+    margin-top: 3rem;
+  }
+  .content p{
+    padding: 0 2rem;
+  }
+
+  .content h2{
+    font-size: 1.5rem;
+  }
+}
