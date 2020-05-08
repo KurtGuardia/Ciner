@@ -163,7 +163,7 @@
       <!-- ________________________________ En Que Trabajamos ________________________________ -->
       <section class="trabajos">
         <div class="trabajos-row">
-          <div class="img-container">
+          <div data-modal-target="#modal" class="img-container">
             <figure class="img-cont">
               <img
                 src="./resources/images/solar-panel.webp"
@@ -176,7 +176,7 @@
             </figure>
           </div>
 
-          <div class="img-container">
+          <div data-modal-target="#modal" class="img-container">
             <figure class="img-cont">
               <img
                 src="./resources/images/study.webp"
@@ -189,7 +189,7 @@
             </figure>
           </div>
 
-          <div class="img-container">
+          <div data-modal-target="#modal" class="img-container">
             <figure class="img-cont">
               <img
                 src="./resources/images/team.webp"
@@ -204,7 +204,7 @@
         </div>
 
         <div class="trabajos-row">
-          <div class="img-container">
+          <div data-modal-target="#modal" class="img-container">
             <figure class="img-cont">
               <img
                 src="./resources/images/concept.webp"
@@ -217,7 +217,7 @@
             </figure>
           </div>
 
-          <div class="img-container">
+          <div data-modal-target="#modal" class="img-container">
             <figure class="img-cont">
               <img
                 src="./resources/images/event.webp"
@@ -230,7 +230,7 @@
             </figure>
           </div>
 
-          <div class="img-container">
+          <div data-modal-target="#modal" class="img-container">
             <figure class="img-cont">
               <img
                 src="./resources/images/books.webp"
@@ -243,6 +243,28 @@
             </figure>
           </div>
         </div>
+
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div id="modal-title" class="title">Modal Title</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div id="modal-body" class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            totam tempore quaerat praesentium, quis vero ipsum placeat
+            asperiores sunt deserunt temporibus quisquam minus aliquam omnis
+            quos unde assumenda neque odit saepe possimus voluptatem quas! Enim
+            dolor numquam, amet odio architecto soluta quod doloribus ut facilis
+            quidem voluptas rerum consequuntur nostrum debitis quaerat
+            perspiciatis ad ipsa consectetur provident sequi aut cumque!
+            Cupiditate eligendi eum quis tempore repellendus, id necessitatibus
+            fugit. Excepturi, quae odio enim ex nulla quas magni, aliquam
+            dolorem, rerum voluptatum incidunt quam consequuntur suscipit nobis
+            rem minus tempore fugit veniam soluta accusantium. Quo, labore.
+            Laborum ipsa velit odio harum.
+          </div>
+        </div>
+        <div id="overlay"></div>
       </section>
       <!-- ________________________________ Informacion ________________________________ -->
       <section id="info" class="info">
@@ -271,7 +293,7 @@
                   <img src="./resources/images/doc.svg" alt="revista" />
                 </div>
               </a>
-              <p>Articulos</p>
+              <p>Noticias</p>
             </div>
           </div>
         </div>

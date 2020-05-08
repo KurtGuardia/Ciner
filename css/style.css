@@ -179,6 +179,7 @@ header #darkfilter {
 
 .nav-mini {
   width: 55%;
+  max-width: 780px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -231,6 +232,7 @@ section h2 {
 
 .cards-container {
   width: 90%;
+  max-width: 1250px;
   margin: 10vh auto 20vh auto;
   display: flex;
   align-items: center;
@@ -353,9 +355,71 @@ section h2 {
 }
 
 .trabajos-row .img-container img {
+  cursor: pointer;
   width: 100%;
   opacity: 0.5;
   transition: 0.7s;
+}
+/* __________ Modals __________ */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: all 0.3s ease-in-out;
+  color: #ccc;
+  background-color: #364974;
+  border-radius: 10px;
+  width: 1000px;
+  max-width: 80%;
+  z-index: 100;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+}
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d84b4b;
+  transition: all 0.3s;
+}
+.modal-header .close-button:hover {
+  transform: scale(1.3);
+  color: #d43333;
+}
+.modal-body {
+  padding: 1rem;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 /* ___________________________________ Informacion ___________________________________ */
@@ -372,13 +436,11 @@ section h2 {
   text-align: center;
 }
 .info__bubbles-row {
-  width: 70%;
+  width: 60%;
+  margin: 10rem auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
-  top: 65%;
-  left: 15%;
 }
 .info-item .bubble {
   cursor: pointer;
@@ -627,18 +689,15 @@ footer {
   color: #fff;
 }
 
+.footer-contact-info > * {
+  max-width: 400px;
+}
+
 /* _______________ Responsive Design _______________ */
 
-@media (min-width: 1400px) {
-  .nav-mini {
-    width: 45%;
-  }
+@media (max-width: 1400px) {
   .info__bubbles-row {
-    width: 60%;
-    top: 73%;
-    left: 20%;
-  }
-  .footer-contact-info > * {
-    width: 65%;
+    width: 70%;
+    margin: -3rem auto;
   }
 }
