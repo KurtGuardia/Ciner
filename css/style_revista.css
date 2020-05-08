@@ -65,6 +65,18 @@ body {
   display: flex;
 }
 
+@media (max-width: 1200px) {
+  
+  body{
+    font-size: 15px;
+  }
+  
+  .nav-mini {
+    width: 80%;
+  }
+}
+
+/*Body*/
 .container{
   margin-top: 9rem;
   text-align: center;
@@ -101,8 +113,74 @@ h2{
   max-width: 9.375rem;
 }
 
+@media(max-width: 768px){
+  
+  h2{
+    font-size: 2rem;
+    color: #feb221;
+    padding: 0rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .card{
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .face{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 250px;
+  }
+
+  .magazine{
+    margin-top: 1rem;
+    width: 80px;
+  }
+
+  span a{
+    position: absolute;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 420px){
+
+  body{
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.135em;
+  }
+
+  .container{
+    margin-top: 7rem;
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .intro{
+    margin: 2rem;
+  }
+
+  .card{
+    padding:1rem;
+  }
+
+  .face{
+    display: none;
+  }
+
+  span a{
+    position: relative;
+    padding-top: 0;
+  }
+}
+
 .text{
-  text-align: left;
+  text-align: justify;
 }
 
 h3{
