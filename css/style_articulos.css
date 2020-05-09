@@ -24,6 +24,94 @@ body {
     flex-direction: column;
 }
 
+@media (max-width: 769px){
+    body{
+        font-size: 15px;    
+    }
+
+    body .container{
+        margin: 2rem;
+    }
+
+    h2 span{
+        font-size: 2rem;
+    }
+    ol {
+        font-size: 1.5rem;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    body{
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    
+    h2 span{
+        font-size: 1rem;
+    }
+
+    ol {
+        font-size: 1rem;
+        padding-left: 0px;
+    }
+
+    ol .article {
+        padding: 1rem 0;
+    }
+
+    li h4{
+        font-size: 1.2rem;
+        letter-spacing: 0rem;
+        padding-bottom: 0.5rem;
+        line-height: 1.5rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+
+    li .downarrow{
+        font-size: 1.5rem;
+        margin-top: -1rem;
+    }
+
+    li .date{ 
+        margin-top: 1rem;
+    }
+
+    li .text_active{
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .text h5 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 0rem;
+    }
+
+    .text{
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0rem;
+    }
+
+    li .noticia__titulo {
+        padding: 1rem;
+    }
+
+    body h2{
+        margin-top: 5rem;
+        font-size: 1.5rem;
+    }
+
+    
+}
+
 /*Navbar*/
 .sec-nav {
     width: 100%;
@@ -50,6 +138,14 @@ body {
     justify-content: space-between;
     list-style: none;
 }
+
+@media (max-width: 1025px){
+    .nav-mini{
+        width: 80%;
+    }
+}
+
+
 
 .sec-nav .nav-mini li a {
     text-decoration: none;
@@ -131,7 +227,6 @@ h2{
 
 h4{
     font-size: 1.8rem;
-    font-weight: 300;
     letter-spacing: 0.2rem;
     padding-bottom: 0.9rem;
     line-height: 2.3rem;
@@ -159,7 +254,6 @@ h5:not(:first-child){
     float: right;
     font-size: 2.5rem;
     margin-top: -3rem;
-    
 }
 
 .downarrow:hover{
@@ -206,7 +300,7 @@ a:hover{
 }
 
 .folleto {
-    width: 40rem;
+    max-width: 40rem;
 }
 
 .folleto img{
