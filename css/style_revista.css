@@ -65,17 +65,6 @@ body {
   display: flex;
 }
 
-@media (max-width: 1200px) {
-  
-  body{
-    font-size: 15px;
-  }
-  
-  .nav-mini {
-    width: 80%;
-  }
-}
-
 /*Body*/
 .container{
   margin-top: 9rem;
@@ -111,6 +100,45 @@ h2{
 
 .magazine{
   max-width: 9.375rem;
+}
+
+
+
+.text{
+  text-align: justify;
+}
+
+h3{
+  padding-bottom: 2rem; 
+}
+
+p{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+span a:link,
+span a:visited{
+  font-size: 0.9rem;
+  color: #1098A8;
+  transition: color .3s;
+  text-decoration: none;
+}
+
+span a:hover{
+  color: #feb221;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  
+  body{
+    font-size: 15px;
+  }
+  
+  .nav-mini {
+    width: 80%;
+  }
 }
 
 @media(max-width: 768px){
@@ -177,30 +205,4 @@ h2{
     position: relative;
     padding-top: 0;
   }
-}
-
-.text{
-  text-align: justify;
-}
-
-h3{
-  padding-bottom: 2rem; 
-}
-
-p{
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-span a:link,
-span a:visited{
-  font-size: 0.9rem;
-  color: #1098A8;
-  transition: color .3s;
-  text-decoration: none;
-}
-
-span a:hover{
-  color: #feb221;
-  cursor: pointer;
 }
