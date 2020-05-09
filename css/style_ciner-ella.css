@@ -181,14 +181,18 @@ body {
   padding: 1rem;
 }
 
-img{
+.pic{
   width: 100%;
   transform: scale(1);
   transition: transform 1.5s;
 }
 
-img:hover:not(:last-child) {
+.pic:hover {
   transform: scale(1.2);
+}
+
+a img{
+  width: 100%;
 }
 
 @keyframes slideInLeft {
