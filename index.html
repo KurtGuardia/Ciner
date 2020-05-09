@@ -38,6 +38,11 @@
             <li><a href="/pages/ciner-ella.html">Ciner-Ella</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
       </nav>
       <div class="text-box">
@@ -67,6 +72,11 @@
             <li><a href="/pages/ciner-ella.html">Ciner-Ella</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
+          <div class="burger2">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
         <div class="section-container">
           <h2>CINER</h2>
@@ -250,18 +260,7 @@
             <button data-close-button class="close-button">&times;</button>
           </div>
           <div id="modal-body" class="modal-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            totam tempore quaerat praesentium, quis vero ipsum placeat
-            asperiores sunt deserunt temporibus quisquam minus aliquam omnis
-            quos unde assumenda neque odit saepe possimus voluptatem quas! Enim
-            dolor numquam, amet odio architecto soluta quod doloribus ut facilis
-            quidem voluptas rerum consequuntur nostrum debitis quaerat
-            perspiciatis ad ipsa consectetur provident sequi aut cumque!
-            Cupiditate eligendi eum quis tempore repellendus, id necessitatibus
-            fugit. Excepturi, quae odio enim ex nulla quas magni, aliquam
-            dolorem, rerum voluptatum incidunt quam consequuntur suscipit nobis
-            rem minus tempore fugit veniam soluta accusantium. Quo, labore.
-            Laborum ipsa velit odio harum.
+            Lorem ipsum
           </div>
         </div>
         <div id="overlay"></div>
@@ -345,10 +344,15 @@
         <div class="contact-box">
           <h2>CONTÁCTENOS</h2>
           <form name="contact" method="POST" data-netlify="true">
-            <input type="text" name="nombre" placeholder="Nombre" />
-            <input type="email" name="email" placeholder="Email" />
-            <input type="number" name="numero" placeholder="Número" />
-            <textarea name="mensaje" rows="4" placeholder="Mensaje"></textarea>
+            <input type="text" name="nombre" placeholder="Nombre" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="number" name="numero" placeholder="Número" required />
+            <textarea
+              name="mensaje"
+              rows="4"
+              placeholder="Mensaje"
+              required
+            ></textarea>
             <button class="btn-contact" type="submit">Enviar</button>
           </form>
         </div>
@@ -397,7 +401,9 @@
           <p>Cochabamba, Bolivia</p>
         </div>
         <div class="logo-box">
-          <img src="./resources/ciner-logo-c.svg" alt="footer-logo" />
+          <a href="#">
+            <img src="./resources/ciner-logo-c.svg" alt="footer-logo" />
+          </a>
         </div>
         <div class="footer-contact-info">
           <div class="phone-fax-email">

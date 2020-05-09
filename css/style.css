@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 125%;
 }
 
 ::selection {
@@ -21,14 +22,16 @@ body {
   background-color: #1f2635;
   color: #555;
   font-weight: 300;
-  font-size: 20px;
+  font-size: inherit;
   text-rendering: optimizeLegibility;
+  width: 100vw;
   overflow-x: hidden;
 }
 
 /* ___________________________________ HEADER ___________________________________ */
 #slideshow {
   width: 100%;
+  max-width: 100vw;
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -58,6 +61,7 @@ body {
 
 header {
   position: relative;
+  max-width: 100vw;
 }
 
 header #darkfilter {
@@ -65,6 +69,7 @@ header #darkfilter {
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 100vw;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
@@ -84,10 +89,11 @@ header #darkfilter {
 }
 
 .row img {
-  width: 10rem;
+  max-width: 10rem;
 }
 
 .main-nav {
+  max-width: 100vw;
   display: flex;
   list-style: none;
 }
@@ -98,7 +104,7 @@ header #darkfilter {
   color: #b8b8b8;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: inherit;
   border-bottom: 2px solid transparent;
   -webkit-transition: border-bottom 0.4s;
   transition: border-bottom 0.4s;
@@ -108,6 +114,21 @@ header #darkfilter {
 .main-nav li a:active {
   color: #feb221;
   border-bottom: 2px solid #feb221;
+}
+
+.burger,
+.burger2 {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div,
+.burger2 div {
+  width: 30px;
+  height: 3px;
+  background-color: #f3f3f3;
+  margin: 5px;
+  transition: all 0.4s ease;
 }
 
 .text-box {
@@ -129,7 +150,7 @@ header #darkfilter {
 .text-box h2 {
   font-size: 1.7rem;
   font-weight: 300;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
 
 .text-box a {
@@ -221,19 +242,19 @@ header #darkfilter {
 section h2 {
   font-size: 2.2rem;
   color: #feb221;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   letter-spacing: 2px;
 }
 
 .section-container p {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .cards-container {
   width: 90%;
-  max-width: 1250px;
-  margin: 10vh auto 20vh auto;
+  max-width: 1300px;
+  margin: 10vh auto 15vh auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -370,7 +391,7 @@ section h2 {
   color: #ccc;
   background-color: #364974;
   border-radius: 10px;
-  width: 1000px;
+  width: 900px;
   max-width: 80%;
   z-index: 100;
 }
@@ -403,6 +424,7 @@ section h2 {
   color: #d43333;
 }
 .modal-body {
+  font-size: 0.95rem;
   padding: 1rem;
 }
 #overlay {
@@ -437,7 +459,9 @@ section h2 {
 }
 .info__bubbles-row {
   width: 60%;
-  margin: 10rem auto;
+  position: absolute;
+  top: 70%;
+  left: 20%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -490,13 +514,13 @@ section .enlaces {
 }
 
 .enlaces .links {
-  width: 60%;
-  margin: 5% 20%;
+  width: 70%;
+  margin: 5% 15%;
   list-style: none;
 }
 
 .enlaces .links li {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 0.7rem;
 }
 
@@ -517,7 +541,7 @@ section .enlaces {
 /* ___________________________________ Contact ___________________________________ */
 
 .contact {
-  padding-top: 5rem;
+  padding-top: 4rem;
   display: flex;
   width: 100%;
   height: 100vh;
@@ -531,7 +555,7 @@ section .enlaces {
 .contact .contact-box h2 {
   color: #1f2635;
   text-align: center;
-  margin: 3.7rem 0;
+  margin: 3rem 0;
 }
 
 .contact .contact-box form {
@@ -590,6 +614,7 @@ section .enlaces {
 /* ___________________________________ Aliados ___________________________________ */
 
 .aliados {
+  max-width: 100vw;
   padding: 3rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../resources/images/aliados-bg.webp);
@@ -598,6 +623,7 @@ section .enlaces {
 
 .aliados-row {
   width: 100%;
+  max-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -695,9 +721,288 @@ footer {
 
 /* _______________ Responsive Design _______________ */
 
-@media (max-width: 1400px) {
+/*_____ Big Laptops _____*/
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 115%;
+  }
+  .sec-nav {
+    max-width: 100vw;
+  }
   .info__bubbles-row {
     width: 70%;
-    margin: -3rem auto;
+    position: absolute;
+    top: 60%;
+    left: 15%;
   }
+  .aliados-row {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .cards-container {
+    width: 100%;
+  }
+  .aliados-row a img {
+    width: 85%;
+  }
+}
+
+/*_____ Small Laptops _____*/
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/*_____ Tablets landscape mode _____*/
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 90%;
+  }
+  .text-box h1 {
+    font-size: 2.5rem;
+  }
+  .text-box h2 {
+    font-size: 1.3rem;
+  }
+  .row .logo {
+    width: 110px;
+  }
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    margin: 0 0.5rem;
+  }
+  .nav-mini {
+    width: 70%;
+  }
+  .card {
+    width: 15rem;
+  }
+  .card__side--front img {
+    width: 65%;
+  }
+  .card__side--front span {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .info__bubbles-row {
+    width: 90%;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+  }
+  .enlaces .links {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .enlaces .links li a {
+    font-size: 1.5rem;
+  }
+  .footer-row-1 {
+    width: 100%;
+  }
+  .logo-box img {
+    width: 60%;
+  }
+  .footer-contact-conteiner {
+    width: 60%;
+    margin: 0 20% 0.7rem 20%;
+  }
+  .social-media a img {
+    width: 75%;
+  }
+}
+
+/*_____ Tablets portrait mode _____*/
+@media only screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .row {
+    width: 91%;
+  }
+  .text-box {
+    width: 100%;
+  }
+  .text-box h1 {
+    margin-top: 3rem;
+    font-size: 2.3rem;
+  }
+  .text-box h2 {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+  .text-box a {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  .main-nav,
+  .nav-mini {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 97vh;
+    background-color: #364974;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-mini {
+    height: 100vh;
+  }
+  .main-nav li,
+  .nav-mini li {
+    opacity: 0;
+  }
+  .burger,
+  .burger2 {
+    display: block;
+  }
+  .cards-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card {
+    width: 60%;
+    height: 20rem;
+    margin-bottom: 2rem;
+  }
+  .card__side {
+    height: 20rem;
+  }
+  .card__side--front img {
+    width: 50%;
+  }
+  .trabajos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .trabajos-row {
+    width: 50%;
+    flex-direction: column;
+  }
+  .trabajos-row .img-container {
+    width: 100%;
+  }
+  .trabajos-row .img-container img {
+    transform: scale(1.05);
+  }
+  .modal {
+    max-height: 90vh;
+    overflow-y: hidden;
+  }
+  .info__bubbles-row {
+    width: 90%;
+    position: absolute;
+    top: 75%;
+    left: 3.5%;
+  }
+  .info-items {
+    width: 100px;
+  }
+  .info-item .bubble {
+    width: 8rem;
+    height: 8rem;
+  }
+  .info-item .bubble img {
+    height: 5rem;
+  }
+  .enlaces .links {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .contact .contact-box {
+    width: 100%;
+  }
+  .contact .contact-box form {
+    height: 70vh;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+  }
+  section h2 {
+    font-size: 1.7rem;
+  }
+  .footer-row-1 {
+    flex-direction: column;
+  }
+  .footer-row-1 > div {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .footer-row-1 .footer-info {
+    text-align: center;
+  }
+  .logo-box img {
+    width: 100px;
+  }
+  .footer-contact-info > * {
+    text-align: center;
+  }
+  .footer-contact-conteiner {
+    width: 40%;
+    margin: 1rem 30%;
+  }
+}
+
+/* Small Phones: From 0 to 480px*/
+@media only screen and (max-width: 480px) {
+  .info-items {
+    width: 90px;
+  }
+  .info-item .bubble {
+    width: 6rem;
+    height: 6rem;
+  }
+  .info-item .bubble img {
+    height: 4rem;
+  }
+  .info__bubbles-row .info-item p {
+    font-size: 1rem;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.text-box.burguer-on {
+  display: none;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes boxFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
