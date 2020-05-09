@@ -74,8 +74,8 @@ body {
 }
 
 .ciner-ella__logo {
-  width: 344px;
-  height: 266px;
+  width: 21.55rem;
+  height: auto;
 }
 
 /*---------Body---------*/
@@ -98,6 +98,7 @@ body {
   align-items: center;
 }
 
+
 .women2,
 .women3 {
   max-width: 32.295rem;
@@ -117,18 +118,12 @@ body {
   max-height: 23.125rem;
 }
 
-.ciner-ella__second {
-  padding-left: 3.125rem;
-}
-
-.ciner-ella__third {
-  padding-right: 3.125rem;
-}
-
+.ciner-ella__second, 
 .ciner-ella__fourth {
   padding-left: 3.125rem;
 }
 
+.ciner-ella__third,
 .ciner-ella__fifth {
   padding-right: 3.125rem;
 }
@@ -214,5 +209,120 @@ a img{
 
   100% {
     transform: translateX(0%);
+  }
+}
+
+@media (max-width: 1025px){
+  
+  body{
+    font-size: 1rem;
+  }
+
+  .nav-mini{
+    width: 80%;
+  }
+  
+  .second,
+  .third,
+  .fourth,
+  .fifth {
+    padding: 5rem 0 0 0;
+  }
+
+  .second .ciner-ella__second, 
+  .fourth .ciner-ella__fourth,
+  .third .ciner-ella__third,
+  .fifth .ciner-ella__fifth{
+    padding: 0;
+  }
+
+  .women1,
+  .women2,
+  .women3,
+  .women4{
+    max-width: 22rem;
+  }
+}
+
+@media (max-width: 769px) {
+
+  body{
+    line-height: 20px;
+  }
+  .ciner-ella__logo{
+    max-width: 15rem;
+  }
+  .second,
+  .third,
+  .fourth,
+  .fifth{
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .third,
+  .fifth{
+    flex-direction: column-reverse;
+  }
+
+  .women1,
+  .women4{
+    padding-left: 0;
+    width: 25rem;
+  }
+  
+  .women2,
+  .women3{
+    padding-right: 0;
+    width: 25rem;
+  }
+
+  .second .ciner-ella__second, 
+  .fourth .ciner-ella__fourth,
+  .third .ciner-ella__third,
+  .fifth .ciner-ella__fifth{
+    padding-top:3rem;
+  }
+
+  .invitation{
+    padding: 3rem 1.5rem;
+  }
+
+  .impacts{
+    max-width: 85%;
+  }
+  .impact-1,
+  .impact-2,
+  .impact-3,
+  .impact-4 {
+    display: inline-block;
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 420px){
+  body{
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 1.2;
+  }
+
+  #header{
+    padding-top: 3rem;
+  }
+  .ciner-ella__logo{
+    max-width: 11rem;
+  }
+
+  .women1,
+  .women2,
+  .women3,
+  .women4{
+    max-width: 18rem;
+  }
+
+  .invitation{
+    padding: 1.5rem;
   }
 }
