@@ -1,4 +1,6 @@
 /* ___________________________________ GENERAL ___________________________________ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -133,11 +135,10 @@ body {
   padding-bottom: 2rem;
 }
 .impacts {
-  display: block;
-  float: right;
-  max-width: 65%;
+  margin-left: 20rem;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
 .impact-1,
@@ -146,6 +147,7 @@ body {
 .impact-4 {
   display: flex;
   padding: 0.7rem;
+  
 }
 
 .impact-4{
@@ -186,7 +188,7 @@ body {
   transform: scale(1.2);
 }
 
-a img{
+.logo-colegio-seguro{
   width: 100%;
 }
 
@@ -309,6 +311,8 @@ footer h3{
   }
 }
 
+/* ___________________________________ Responsive Design ___________________________________ */
+
 @media (max-width: 1025px){
   
   body{
@@ -386,14 +390,13 @@ footer h3{
   }
 
   .impacts{
-    max-width: 85%;
+    margin-left: 10rem;
   }
   .impact-1,
   .impact-2,
   .impact-3,
   .impact-4 {
     display: inline-block;
-    text-align: left;
   }
 
 }
@@ -421,5 +424,9 @@ footer h3{
 
   .invitation{
     padding: 1.5rem;
+  }
+
+  .impacts{
+    margin: 0 13px;
   }
 }
