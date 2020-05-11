@@ -423,7 +423,7 @@ footer h3 {
   }
 
   footer {
-    font-size: 12px;
+    font-size: inherit;
   }
   .footer-row-1 {
     flex-direction: column;

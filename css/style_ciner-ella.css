@@ -343,6 +343,15 @@ footer h3{
   .women4{
     max-width: 22rem;
   }
+  
+  .footer-contact-conteiner {
+    width: 60%;
+    margin: 0 20% 0.7rem 20%;
+  }
+
+  .social-media a img {
+    width: 75%;
+  }
 }
 
 @media (max-width: 769px) {
@@ -399,6 +408,12 @@ footer h3{
     display: inline-block;
   }
 
+  .logo-box img {
+    width: 120px;
+  }
+  .social-media a img {
+    width: 55%;
+  }
 }
 
 @media (max-width: 420px){
@@ -428,5 +443,33 @@ footer h3{
 
   .impacts{
     margin: 0 13px;
+  }
+
+  footer {
+    font-size: inherit;
+  }
+  .footer-row-1 {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .footer-row-1 > div {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .footer-row-1 .footer-info {
+    text-align: center;
+  }
+  .logo-box img {
+    width: 80px;
+  }
+  .footer-contact-info > * {
+    text-align: center;
+  }
+  .footer-contact-conteiner {
+    width: 60%;
+    margin: 1rem 20%;
+  }
+  .social-media a img {
+    width: 2rem;
   }
 }
