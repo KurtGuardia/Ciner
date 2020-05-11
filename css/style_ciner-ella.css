@@ -1,5 +1,5 @@
 /* ___________________________________ GENERAL ___________________________________ */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
 
 * {
   margin: 0;
@@ -7,14 +7,14 @@
   box-sizing: border-box;
 }
 
-::selection{
+::selection {
   color: #ffc75e;
-  background-color: #1098A8;
+  background-color: #1098a8;
 }
 
 body {
   background-color: #1f2635;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 0.135em;
@@ -41,7 +41,7 @@ body {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.sec-nav img{
+.sec-nav img {
   width: 3.5rem;
 }
 
@@ -67,6 +67,19 @@ body {
 
 #sec-nav.active {
   display: flex;
+}
+
+.burger2 {
+  display: none;
+  cursor: pointer;
+}
+
+.burger2 div {
+  width: 30px;
+  height: 3px;
+  background-color: #f3f3f3;
+  margin: 5px;
+  transition: all 0.4s ease;
 }
 
 /*Ciner-Ella Logo*/
@@ -100,7 +113,6 @@ body {
   align-items: center;
 }
 
-
 .women2,
 .women3 {
   max-width: 32.295rem;
@@ -120,7 +132,7 @@ body {
   max-height: 23.125rem;
 }
 
-.ciner-ella__second, 
+.ciner-ella__second,
 .ciner-ella__fourth {
   padding-left: 3.125rem;
 }
@@ -147,23 +159,22 @@ body {
 .impact-4 {
   display: flex;
   padding: 0.7rem;
-  
 }
 
-.impact-4{
+.impact-4 {
   display: inline-block;
 }
 
-.impact-4 a{
+.impact-4 a {
   text-decoration: none;
-  color: #feb221;   
-  transition: all .6s;
+  color: #feb221;
+  transition: all 0.6s;
   border-bottom: none;
 }
 
-.impact-4 a:hover{
-  color: #1098A8;
-  border-bottom: 1px solid #1098A8;
+.impact-4 a:hover {
+  color: #1098a8;
+  border-bottom: 1px solid #1098a8;
 }
 
 .arrow {
@@ -172,13 +183,13 @@ body {
   padding-right: 1.7rem;
 }
 
-.logo-pequeño{
+.logo-pequeño {
   max-width: 10rem;
   align-self: center;
   padding: 1rem;
 }
 
-.pic{
+.pic {
   width: 100%;
   transform: scale(1);
   transition: transform 1.5s;
@@ -188,10 +199,9 @@ body {
   transform: scale(1.2);
 }
 
-.logo-colegio-seguro{
+.logo-colegio-seguro {
   width: 100%;
 }
-
 
 /* ___________________________________ footer ___________________________________ */
 
@@ -210,11 +220,11 @@ footer {
   margin-top: 5rem;
 }
 
-footer p{
+footer p {
   margin: 0;
 }
 
-footer h3{
+footer h3 {
   padding: 0;
 }
 
@@ -290,7 +300,6 @@ footer h3{
 }
 
 @keyframes slideInLeft {
-
   0% {
     transform: translateX(-100%);
   }
@@ -301,7 +310,6 @@ footer h3{
 }
 
 @keyframes slideInRight {
-
   0% {
     transform: translateX(200%);
   }
@@ -313,16 +321,15 @@ footer h3{
 
 /* ___________________________________ Responsive Design ___________________________________ */
 
-@media (max-width: 1025px){
-  
-  body{
+@media (max-width: 1025px) {
+  body {
     font-size: 1rem;
   }
 
-  .nav-mini{
+  .nav-mini {
     width: 80%;
   }
-  
+
   .second,
   .third,
   .fourth,
@@ -330,20 +337,20 @@ footer h3{
     padding: 5rem 0 0 0;
   }
 
-  .second .ciner-ella__second, 
+  .second .ciner-ella__second,
   .fourth .ciner-ella__fourth,
   .third .ciner-ella__third,
-  .fifth .ciner-ella__fifth{
+  .fifth .ciner-ella__fifth {
     padding: 0;
   }
 
   .women1,
   .women2,
   .women3,
-  .women4{
+  .women4 {
     max-width: 22rem;
   }
-  
+
   .footer-contact-conteiner {
     width: 60%;
     margin: 0 20% 0.7rem 20%;
@@ -355,50 +362,75 @@ footer h3{
 }
 
 @media (max-width: 769px) {
-
-  body{
+  body {
     line-height: 20px;
   }
-  .ciner-ella__logo{
+  .nav-mini {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 97vh;
+    background-color: #364974;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 0;
+    /* transform: translateX(120%);
+    transition: transform 0.5s ease-in; */
+  }
+  .nav-mini.nav-active {
+    width: 50%;
+  }
+  .nav-mini {
+    height: 100vh;
+  }
+  .nav-mini li {
+    opacity: 0;
+  }
+  .burger2 {
+    display: block;
+  }
+  .ciner-ella__logo {
     max-width: 15rem;
   }
   .second,
   .third,
   .fourth,
-  .fifth{
+  .fifth {
     flex-direction: column;
     padding: 1.5rem;
   }
 
   .third,
-  .fifth{
+  .fifth {
     flex-direction: column-reverse;
   }
 
   .women1,
-  .women4{
+  .women4 {
     padding-left: 0;
     width: 25rem;
   }
-  
+
   .women2,
-  .women3{
+  .women3 {
     padding-right: 0;
     width: 25rem;
   }
 
-  .second .ciner-ella__second, 
+  .second .ciner-ella__second,
   .fourth .ciner-ella__fourth,
   .third .ciner-ella__third,
-  .fifth .ciner-ella__fifth{
-    padding-top:3rem;
+  .fifth .ciner-ella__fifth {
+    padding-top: 3rem;
   }
 
-  .invitation{
+  .invitation {
     padding: 3rem 1.5rem;
   }
 
-  .impacts{
+  .impacts {
     margin-left: 10rem;
   }
   .impact-1,
@@ -416,32 +448,32 @@ footer h3{
   }
 }
 
-@media (max-width: 420px){
-  body{
+@media (max-width: 420px) {
+  body {
     font-size: 15px;
     letter-spacing: 0;
     line-height: 1.2;
   }
 
-  #header{
+  #header {
     padding-top: 3rem;
   }
-  .ciner-ella__logo{
+  .ciner-ella__logo {
     max-width: 11rem;
   }
 
   .women1,
   .women2,
   .women3,
-  .women4{
+  .women4 {
     max-width: 18rem;
   }
 
-  .invitation{
+  .invitation {
     padding: 1.5rem;
   }
 
-  .impacts{
+  .impacts {
     margin: 0 13px;
   }
 
@@ -468,6 +500,9 @@ footer h3{
   .footer-contact-conteiner {
     width: 60%;
     margin: 1rem 20%;
+  }
+  .footer-contact-conteiner img {
+    margin-right: 10px;
   }
   .social-media a img {
     width: 2rem;
