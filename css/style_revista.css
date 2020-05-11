@@ -132,49 +132,6 @@ span a:hover{
   cursor: pointer;
 }
 
-@media (max-width: 1200px) {
-  
-  body{
-    font-size: 15px;
-  }
-  
-  .nav-mini {
-    width: 80%;
-  }
-}
-
-@media(max-width: 768px){
-  
-  h2{
-    font-size: 2rem;
-    color: #feb221;
-    padding: 0rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-  }
-
-  .card{
-    flex-direction: column-reverse;
-    width: 90%;
-  }
-
-  .face{
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 250px;
-  }
-
-  .magazine{
-    margin-top: 1rem;
-    width: 80px;
-  }
-
-  span a{
-    position: absolute;
-    padding-top: 50px;
-  }
-}
-
 /* ___________________________________ footer ___________________________________ */
 
 footer {
@@ -273,6 +230,60 @@ footer h3{
 
 /* ___________________________________ Responsive Design ___________________________________ */
 
+@media (max-width: 1200px) {
+  
+  body{
+    font-size: 15px;
+  }
+  
+  .nav-mini {
+    width: 80%;
+  }
+
+  .footer-contact-conteiner {
+    width: 60%;
+    margin: 0 20% 0.7rem 20%;
+  }
+  .social-media a img {
+    width: 75%;
+  }
+}
+
+@media(max-width: 769px){
+  
+  h2{
+    font-size: 2rem;
+    color: #feb221;
+    padding: 0rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .card{
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .face{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 250px;
+  }
+
+  .magazine{
+    margin-top: 1rem;
+    width: 80px;
+  }
+
+  span a{
+    position: absolute;
+    padding-top: 50px;
+  }
+
+  .logo-box img {
+    width: 120px;
+  }
+}
 
 @media (max-width: 420px){
 
@@ -305,5 +316,33 @@ footer h3{
   span a{
     position: relative;
     padding-top: 0;
+  }
+  
+  footer{
+    font-size: inherit;
+  }
+  .footer-row-1 {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .footer-row-1 > div {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .footer-row-1 .footer-info {
+    text-align: center;
+  }
+  .logo-box img {
+    width: 80px;
+  }
+  .footer-contact-info > * {
+    text-align: center;
+  }
+  .footer-contact-conteiner {
+    width: 60%;
+    margin: 1rem 20%;
+  }
+  .social-media a img{
+    width: 2rem;
   }
 }

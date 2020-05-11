@@ -242,6 +242,10 @@ footer h3{
     width: 90%;
     font-size: 1rem;
   }
+
+  .logo-box img {
+    width: 120px;
+  }
 }
 
 @media(max-width: 420px){
