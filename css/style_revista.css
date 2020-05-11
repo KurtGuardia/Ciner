@@ -283,6 +283,9 @@ footer h3{
   .logo-box img {
     width: 120px;
   }
+  .social-media a img {
+    width: 55%;
+  }
 }
 
 @media (max-width: 420px){
@@ -317,7 +320,7 @@ footer h3{
     position: relative;
     padding-top: 0;
   }
-  
+
   footer{
     font-size: inherit;
   }
