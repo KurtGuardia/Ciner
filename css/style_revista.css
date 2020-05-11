@@ -1,4 +1,6 @@
 /* ___________________________________ GENERAL ___________________________________ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -65,6 +67,19 @@ body {
   display: flex;
 }
 
+.burger2 {
+  display: none;
+  cursor: pointer;
+}
+
+.burger2 div {
+  width: 30px;
+  height: 3px;
+  background-color: #f3f3f3;
+  margin: 5px;
+  transition: all 0.4s ease;
+}
+
 /*Body*/
 .container{
   margin-top: 9rem;
@@ -128,49 +143,6 @@ span a:visited{
 span a:hover{
   color: #feb221;
   cursor: pointer;
-}
-
-@media (max-width: 1200px) {
-  
-  body{
-    font-size: 15px;
-  }
-  
-  .nav-mini {
-    width: 80%;
-  }
-}
-
-@media(max-width: 768px){
-  
-  h2{
-    font-size: 2rem;
-    color: #feb221;
-    padding: 0rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-  }
-
-  .card{
-    flex-direction: column-reverse;
-    width: 90%;
-  }
-
-  .face{
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 250px;
-  }
-
-  .magazine{
-    margin-top: 1rem;
-    width: 80px;
-  }
-
-  span a{
-    position: absolute;
-    padding-top: 50px;
-  }
 }
 
 /* ___________________________________ footer ___________________________________ */
@@ -269,8 +241,115 @@ footer h3{
   max-width: 400px;
 }
 
+/* ___________________________________ Animation ___________________________________ */
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 /* ___________________________________ Responsive Design ___________________________________ */
 
+@media (max-width: 1200px) {
+  
+  body{
+    font-size: 15px;
+  }
+  
+  .nav-mini {
+    width: 80%;
+  }
+
+  .footer-contact-conteiner {
+    width: 60%;
+    margin: 0 20% 0.7rem 20%;
+  }
+  .social-media a img {
+    width: 75%;
+  }
+}
+
+@media(max-width: 769px){
+  
+  .nav-mini {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 97vh;
+    background-color: #364974;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 0;
+    /* transform: translateX(120%);
+    transition: transform 0.5s ease-in; */
+  }
+  .nav-mini.nav-active {
+    width: 50%;
+  }
+  .nav-mini {
+    height: 100vh;
+  }
+  .nav-mini li {
+    opacity: 0;
+  }
+  .burger2 {
+    display: block;
+  }
+  
+  h2{
+    font-size: 2rem;
+    color: #feb221;
+    padding: 0rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+  .card{
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .face{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 250px;
+  }
+
+  .magazine{
+    margin-top: 1rem;
+    width: 80px;
+  }
+
+  span a{
+    position: absolute;
+    padding-top: 50px;
+  }
+
+  .logo-box img {
+    width: 120px;
+  }
+  .social-media a img {
+    width: 55%;
+  }
+}
 
 @media (max-width: 420px){
 
@@ -303,5 +382,33 @@ footer h3{
   span a{
     position: relative;
     padding-top: 0;
+  }
+
+  footer{
+    font-size: inherit;
+  }
+  .footer-row-1 {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .footer-row-1 > div {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .footer-row-1 .footer-info {
+    text-align: center;
+  }
+  .logo-box img {
+    width: 80px;
+  }
+  .footer-contact-info > * {
+    text-align: center;
+  }
+  .footer-contact-conteiner {
+    width: 60%;
+    margin: 1rem 20%;
+  }
+  .social-media a img{
+    width: 2rem;
   }
 }

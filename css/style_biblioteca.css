@@ -1,4 +1,6 @@
 /* ___________________________________ GENERAL ___________________________________ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +76,19 @@ border-bottom: 1px solid #feb221;
   display: flex;
 }
 
+.burger2 {
+  display: none;
+  cursor: pointer;
+}
+
+.burger2 div {
+  width: 30px;
+  height: 3px;
+  background-color: #f3f3f3;
+  margin: 5px;
+  transition: all 0.4s ease;
+}
+
 /*Content*/
 .content{
   margin-top: 8rem;
@@ -103,7 +118,7 @@ border-bottom: 1px solid #feb221;
 /*Button*/
 .btn {
   font-weight: bold;
-  margin: 0 2rem;
+  margin: 5rem 2rem;
   text-decoration: none;
   padding: 10px 2.5rem;
   border: 2px solid #feb221;
@@ -131,8 +146,8 @@ footer {
   line-height: 1.5;
   letter-spacing: 0;
   font-weight: 300;
-  border-top: 1px solid #feb221;
-  margin-top: 5rem;
+  margin-top: 0rem;
+  background-color: #1f2635;
 }
 
 footer p{
@@ -214,10 +229,91 @@ footer h3{
   max-width: 400px;
 }
 
+/* ___________________________________ Animation ___________________________________ */
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  background-color: #273f74;
+}
+.toggle .line2 {
+  opacity: 0;
+  background-color: #273f74;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+  background-color: #273f74;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 /* ___________________________________ Responsive Design ___________________________________ */
 
+@media(max-width: 1025px){
 
-@media(max-width: 420px){
+  .main-nav.nav-active li a:link,
+  .main-nav.nav-active li a:visited {
+    margin-left: 0.5rem;
+  }
+  .nav-mini {
+    width: 80%;
+  }
+
+  .footer-contact-conteiner {
+    width: 60%;
+    margin: 0 20% 0.7rem 20%;
+  }
+  .social-media a img {
+    width: 75%;
+  }
+}
+
+@media (max-width: 769px){
+  .nav-mini {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 97vh;
+    background-color: rgba(255, 255, 255, 0.87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 0;
+    /* transform: translateX(120%);
+    transition: transform 0.5s ease-in; */
+  }
+  .nav-mini.nav-active {
+    width: 50%;
+  }
+  .nav-mini {
+    height: 100vh;
+  }
+  .nav-mini li {
+    opacity: 0;
+  }
+  .sec-nav .nav-mini li a{
+    color: #273f74
+  }
+  .burger2 {
+    display: block;
+  }
+  .logo-box img {
+    width: 120px;
+  }
+  .social-media a img {
+    width: 55%;
+  }
+}
+
+@media(max-width: 425px){
   
   body{
     font-size: 14px;
@@ -233,5 +329,33 @@ footer h3{
 
   .content h2{
     font-size: 1.5rem;
+  }
+
+  footer{
+    font-size: inherit;
+  }
+  .footer-row-1 {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .footer-row-1 > div {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .footer-row-1 .footer-info {
+    text-align: center;
+  }
+  .logo-box img {
+    width: 80px;
+  }
+  .footer-contact-info > * {
+    text-align: center;
+  }
+  .footer-contact-conteiner {
+    width: 60%;
+    margin: 1rem 20%;
+  }
+  .social-media a img{
+    width: 2rem;
   }
 }
