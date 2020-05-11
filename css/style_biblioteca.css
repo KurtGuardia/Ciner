@@ -233,12 +233,15 @@ footer h3{
 
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
+  background-color: #273f74;
 }
 .toggle .line2 {
   opacity: 0;
+  background-color: #273f74;
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+  background-color: #273f74;
 }
 
 @keyframes navLinkFade {
@@ -278,7 +281,7 @@ footer h3{
     right: 0px;
     top: 0px;
     height: 97vh;
-    background-color: #364974;
+    background-color: rgba(255, 255, 255, 0.87);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -296,6 +299,9 @@ footer h3{
   .nav-mini li {
     opacity: 0;
   }
+  .sec-nav .nav-mini li a{
+    color: #273f74
+  }
   .burger2 {
     display: block;
   }
@@ -307,7 +313,7 @@ footer h3{
   }
 }
 
-@media(max-width: 420px){
+@media(max-width: 425px){
   
   body{
     font-size: 14px;
