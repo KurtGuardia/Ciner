@@ -218,7 +218,16 @@ footer h3{
 
 /* ___________________________________ Responsive Design ___________________________________ */
 
+@media(max-width: 1025px){
 
+  .footer-contact-conteiner {
+    width: 60%;
+    margin: 0 20% 0.7rem 20%;
+  }
+  .social-media a img {
+    width: 75%;
+  }
+}
 @media(max-width: 420px){
   
   body{
