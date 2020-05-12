@@ -878,11 +878,12 @@ footer {
   }
   .card {
     width: 60%;
-    height: 20rem;
+    height: 22rem;
     margin-bottom: 2rem;
   }
   .card__side {
-    height: 20rem;
+    height: 22rem;
+    margin-bottom: 2rem;
   }
   .card__side--front img {
     width: 50%;
