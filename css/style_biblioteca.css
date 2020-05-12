@@ -23,7 +23,7 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   /*background for Biblioteca*/
-  background-image: linear-gradient(rgba(0, 0, 7, 0.7), rgba(0, 0, 7, 0.7)), url(../resources/images/Picking_out_a_book.jpg);
+  background-image: linear-gradient(rgba(0, 0, 7, 0.7), rgba(0, 0, 7, 0.7)), url(../resources/images/Picking_out_a_book.webp);
   background-size: 100vw 100vh;
   
 }
