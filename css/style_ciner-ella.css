@@ -117,15 +117,12 @@ body {
 .women3 {
   max-width: 32.295rem;
   padding-right: 3.125rem;
-  animation: slideInLeft 1s;
 }
 
 .women4,
 .women1 {
   max-width: 32.295rem;
   padding-left: 3.125rem;
-  animation-name: bounceInLeft;
-  animation: slideInRight 1s;
 }
 
 .women3 {
@@ -300,26 +297,6 @@ footer h3 {
 }
 
 /* ___________________________________ Animation ___________________________________ */
-
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translateX(200%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
 
 @keyframes navLinkFade {
   from {
