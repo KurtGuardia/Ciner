@@ -1,5 +1,5 @@
 /* ___________________________________ GENERAL ___________________________________ */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
 
 * {
   margin: 0;
@@ -14,7 +14,7 @@
 
 body {
   background-color: #1f2635;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 0.135em;
@@ -392,6 +392,7 @@ footer h3 {
   }
   .nav-mini.nav-active {
     width: 50%;
+    transform: translateY(33px);
   }
   .nav-mini {
     height: 100vh;
@@ -509,8 +510,8 @@ footer h3 {
     width: 60%;
     margin: 1rem 20%;
   }
-  .footer-contact-conteiner img{
-      margin-right: 10px;
+  .footer-contact-conteiner img {
+    margin-right: 10px;
   }
   .social-media a img {
     width: 2rem;

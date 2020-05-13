@@ -7,15 +7,14 @@
   box-sizing: border-box;
 }
 
-::selection{
+::selection {
   color: #ffc75e;
-  background-color: #1098A8;
+  background-color: #1098a8;
 }
 
 body {
-  
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;  
+  font-size: 20px;
   line-height: 25px;
   letter-spacing: 0.135em;
   color: #d0d0d0;
@@ -23,53 +22,52 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   /*background for Biblioteca*/
-  background-image: linear-gradient(rgba(0, 0, 7, 0.7), rgba(0, 0, 7, 0.7)), url(../resources/images/Picking_out_a_book.webp);
+  background-image: linear-gradient(rgba(0, 0, 7, 0.7), rgba(0, 0, 7, 0.7)),
+    url(../resources/images/Picking_out_a_book.webp);
   background-size: 100vw 100vh;
-  
 }
 
 /* ---------------------------- BIBLIOTECA ---------------------------- */
 
 /*---------HEADER---------*/
 
-
 /*Navbar*/
 .sec-nav {
-width: 100%;
-position: fixed;
-top: 0;
-left: 0;
-padding: 0.5rem 2rem;
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: rgba(255, 255, 255, 0.16);;
-z-index: 10;
-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.16);
+  z-index: 10;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.sec-nav img{
+.sec-nav img {
   width: 3.5rem;
 }
 
 .nav-mini {
-width: 60%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-list-style: none;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .sec-nav .nav-mini li a {
-text-decoration: none;
-color: #d0d0d0;
-padding-bottom: 3px;
-transition: all 0.3s;
+  text-decoration: none;
+  color: #d0d0d0;
+  padding-bottom: 3px;
+  transition: all 0.3s;
 }
 
 .sec-nav .nav-mini li a:hover {
-color: #feb221;
-border-bottom: 1px solid #feb221;
+  color: #feb221;
+  border-bottom: 1px solid #feb221;
 }
 
 #sec-nav.active {
@@ -90,14 +88,14 @@ border-bottom: 1px solid #feb221;
 }
 
 /*Content*/
-.content{
+.content {
   margin-top: 8rem;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.content h2{
+.content h2 {
   font-size: 3rem;
   font-weight: 300;
   color: #feb221;
@@ -105,13 +103,13 @@ border-bottom: 1px solid #feb221;
   text-transform: uppercase;
 }
 
-.content p{
+.content p {
   padding: 2rem 8rem;
   text-align: justify;
   font-weight: 500;
 }
 
-.content a{
+.content a {
   margin: 2rem auto;
 }
 
@@ -150,11 +148,11 @@ footer {
   background-color: #1f2635;
 }
 
-footer p{
+footer p {
   margin: 0;
 }
 
-footer h3{
+footer h3 {
   padding: 0;
 }
 
@@ -256,8 +254,7 @@ footer h3{
 }
 /* ___________________________________ Responsive Design ___________________________________ */
 
-@media(max-width: 1025px){
-
+@media (max-width: 1025px) {
   .main-nav.nav-active li a:link,
   .main-nav.nav-active li a:visited {
     margin-left: 0.5rem;
@@ -275,7 +272,7 @@ footer h3{
   }
 }
 
-@media (max-width: 769px){
+@media (max-width: 769px) {
   .nav-mini {
     position: absolute;
     right: 0px;
@@ -292,6 +289,7 @@ footer h3{
   }
   .nav-mini.nav-active {
     width: 50%;
+    transform: translateY(33px);
   }
   .nav-mini {
     height: 100vh;
@@ -299,8 +297,8 @@ footer h3{
   .nav-mini li {
     opacity: 0;
   }
-  .sec-nav .nav-mini li a{
-    color: #273f74
+  .sec-nav .nav-mini li a {
+    color: #273f74;
   }
   .burger2 {
     display: block;
@@ -313,25 +311,24 @@ footer h3{
   }
 }
 
-@media(max-width: 425px){
-  
-  body{
+@media (max-width: 425px) {
+  body {
     font-size: 14px;
     line-height: 15px;
   }
 
-  .content{
-    margin-top: 3rem;
+  .content {
+    margin-top: 4.5rem;
   }
-  .content p{
+  .content p {
     padding: 0 2rem;
   }
 
-  .content h2{
+  .content h2 {
     font-size: 1.5rem;
   }
 
-  footer{
+  footer {
     font-size: inherit;
   }
   .footer-row-1 {
@@ -355,7 +352,7 @@ footer h3{
     width: 60%;
     margin: 1rem 20%;
   }
-  .social-media a img{
+  .social-media a img {
     width: 2rem;
   }
 }

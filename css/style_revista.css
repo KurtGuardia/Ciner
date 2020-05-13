@@ -6,10 +6,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-  
-::selection{
+
+::selection {
   color: #ffc75e;
-  background-color: #1098A8;
+  background-color: #1098a8;
 }
 
 body {
@@ -19,11 +19,11 @@ body {
   line-height: 25px;
   letter-spacing: 0.135em;
   color: #d0d0d0;
-  text-align: justify;  
+  text-align: justify;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
-  
+
 /*Navbar*/
 .sec-nav {
   width: 100%;
@@ -39,7 +39,7 @@ body {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.sec-nav img{
+.sec-nav img {
   width: 3.5rem;
 }
 
@@ -81,12 +81,12 @@ body {
 }
 
 /*Body*/
-.container{
+.container {
   margin-top: 9rem;
   text-align: center;
 }
 
-h2{
+h2 {
   font-size: 3rem;
   font-weight: 300;
   color: #feb221;
@@ -95,12 +95,12 @@ h2{
   text-transform: uppercase;
 }
 
-.intro{
+.intro {
   text-align: justify;
   margin: 5rem;
 }
 
-.card{
+.card {
   margin: auto;
   padding: 3rem;
   border-top: 1px solid #fff;
@@ -108,39 +108,37 @@ h2{
   width: 80%;
 }
 
-.face{
+.face {
   margin-right: 5rem;
   align-self: center;
 }
 
-.magazine{
+.magazine {
   max-width: 9.375rem;
 }
 
-
-
-.text{
+.text {
   text-align: justify;
 }
 
-h3{
-  padding-bottom: 2rem; 
+h3 {
+  padding-bottom: 2rem;
 }
 
-p{
+p {
   width: 100%;
   margin-bottom: 1rem;
 }
 
 span a:link,
-span a:visited{
+span a:visited {
   font-size: 0.9rem;
-  color: #1098A8;
-  transition: color .3s;
+  color: #1098a8;
+  transition: color 0.3s;
   text-decoration: none;
 }
 
-span a:hover{
+span a:hover {
   color: #feb221;
   cursor: pointer;
 }
@@ -162,11 +160,11 @@ footer {
   margin-top: 5rem;
 }
 
-footer p{
+footer p {
   margin: 0;
 }
 
-footer h3{
+footer h3 {
   padding: 0;
 }
 
@@ -267,11 +265,10 @@ footer h3{
 /* ___________________________________ Responsive Design ___________________________________ */
 
 @media (max-width: 1200px) {
-  
-  body{
+  body {
     font-size: 15px;
   }
-  
+
   .nav-mini {
     width: 80%;
   }
@@ -285,8 +282,7 @@ footer h3{
   }
 }
 
-@media(max-width: 769px){
-  
+@media (max-width: 769px) {
   .nav-mini {
     position: absolute;
     right: 0px;
@@ -303,6 +299,7 @@ footer h3{
   }
   .nav-mini.nav-active {
     width: 50%;
+    transform: translateY(33px);
   }
   .nav-mini {
     height: 100vh;
@@ -313,8 +310,8 @@ footer h3{
   .burger2 {
     display: block;
   }
-  
-  h2{
+
+  h2 {
     font-size: 2rem;
     color: #feb221;
     padding: 0rem;
@@ -322,23 +319,23 @@ footer h3{
     text-transform: uppercase;
   }
 
-  .card{
+  .card {
     flex-direction: column-reverse;
     width: 90%;
   }
 
-  .face{
+  .face {
     display: flex;
     justify-content: flex-end;
     margin-left: 250px;
   }
 
-  .magazine{
+  .magazine {
     margin-top: 1rem;
     width: 80px;
   }
 
-  span a{
+  span a {
     position: absolute;
     padding-top: 50px;
   }
@@ -351,40 +348,39 @@ footer h3{
   }
 }
 
-@media (max-width: 420px){
-
-  body{
+@media (max-width: 420px) {
+  body {
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0.135em;
   }
 
-  .container{
+  .container {
     margin-top: 7rem;
   }
 
-  h2{
+  h2 {
     font-size: 1.5rem;
   }
 
-  .intro{
+  .intro {
     margin: 2rem;
   }
 
-  .card{
-    padding:1rem;
+  .card {
+    padding: 1rem;
   }
 
-  .face{
+  .face {
     display: none;
   }
 
-  span a{
+  span a {
     position: relative;
     padding-top: 0;
   }
 
-  footer{
+  footer {
     font-size: inherit;
   }
   .footer-row-1 {
@@ -408,7 +404,7 @@ footer h3{
     width: 60%;
     margin: 1rem 20%;
   }
-  .social-media a img{
+  .social-media a img {
     width: 2rem;
   }
 }
