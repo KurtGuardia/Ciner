@@ -145,3 +145,22 @@ const navSlide = () => {
 };
 
 navSlide();
+
+// Enlaces Show
+const enlacesShow = [...document.querySelectorAll('.enlaces__show')];
+
+enlacesShow.forEach((enlace, i) => {
+  enlace.addEventListener('click', () => {
+    //console.log(enlace.firstChild.textContent);
+    if (enlace.firstChild.textContent == '⇒') {
+      enlace.firstChild.innerHTML = '⇩';
+    } else if (enlace.firstChild.textContent == '⇩') {
+      enlace.firstChild.innerHTML = '⇒';
+    }
+
+    let id = `enlaces__list--${i}`;
+    const list = document.getElementById(id);
+
+    list.classList.toggle('active');
+  });
+});
