@@ -529,6 +529,7 @@ section .enlaces {
 }
 
 .enlaces .links li a {
+  cursor: pointer;
   text-decoration: none;
   color: #c9c9c9;
 }
@@ -536,6 +537,57 @@ section .enlaces {
 .enlaces .links li span:hover,
 .enlaces .links li a:hover {
   color: #feb221;
+}
+
+.enlaces__list {
+  transform: translateX(3rem);
+}
+
+.enlaces__list span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  transition: all 0.2s;
+}
+
+.enlaces__list a {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #acacac;
+  transition: all 0.2s;
+}
+.enlaces__list span:hover,
+.enlaces__list a:hover {
+  color: #feb221;
+}
+
+#enlaces__list--0,
+#enlaces__list--1,
+#enlaces__list--2,
+#enlaces__list--3,
+#enlaces__list--4,
+#enlaces__list--5,
+#enlaces__list--6,
+#enlaces__list--7,
+#enlaces__list--8,
+#enlaces__list--9 {
+  display: none;
+}
+
+#enlaces__list--0.active,
+#enlaces__list--1.active,
+#enlaces__list--2.active,
+#enlaces__list--3.active,
+#enlaces__list--4.active,
+#enlaces__list--5.active,
+#enlaces__list--6.active,
+#enlaces__list--7.active,
+#enlaces__list--8.active,
+#enlaces__list--9.active {
+  display: block;
 }
 
 /* ___________________________________ Contact ___________________________________ */
