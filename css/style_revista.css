@@ -181,9 +181,9 @@ footer h3 {
   width: 33%;
 }
 
-.footer-row-1 .logo-box img {
+.footer-row-1 .logo-box svg {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.6;
   transition: all 0.3s;
 }
 
@@ -191,7 +191,7 @@ footer h3 {
   text-align: left;
 }
 
-.footer-row-1 .logo-box img:hover {
+.footer-row-1 .logo-box svg:hover {
   opacity: 1;
 }
 
@@ -212,12 +212,12 @@ footer h3 {
   justify-content: space-between;
 }
 
-.social-media a img {
+.social-media a svg {
   opacity: 0.6;
   transition: all 0.3s;
 }
 
-.social-media a img:hover {
+.social-media a svg:hover {
   opacity: 1;
 }
 
