@@ -636,6 +636,7 @@ section .enlaces {
 .contact .contact-box .btn-contact:visited {
   cursor: pointer;
   margin-top: 3rem;
+  margin-bottom: 1rem;
   color: #1f2635;
   font-size: 1.3rem;
   padding: 0.7rem 2rem;
@@ -835,6 +836,36 @@ footer {
   .card__side--front span {
     margin-top: 2rem;
     font-size: 2rem;
+  }
+  .img-cont__caption {
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.7s;
+    backface-visibility: hidden;
+  }
+
+  .img-cont__caption p {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .img-cont .img-cont__caption {
+    pointer-events: none;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .img-cont .img-cont__img {
+    transform: scale(1.05);
+    filter: blur(3px);
+    opacity: 1;
   }
   .info__bubbles-row {
     width: 90%;
