@@ -1,5 +1,5 @@
 /* ___________________________________ GENERAL ___________________________________ */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
 
 * {
   margin: 0;
@@ -14,7 +14,7 @@
 
 body {
   background-color: #1f2635;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 25px;
   letter-spacing: 0.135em;
@@ -261,7 +261,7 @@ footer h3 {
   width: 33%;
 }
 
-.footer-row-1 .logo-box svg {
+.footer-row-1 .logo-box img {
   cursor: pointer;
   opacity: 0.6;
   transition: all 0.3s;
@@ -271,7 +271,7 @@ footer h3 {
   text-align: left;
 }
 
-.footer-row-1 .logo-box svg:hover {
+.footer-row-1 .logo-box img:hover {
   opacity: 1;
 }
 
@@ -292,12 +292,12 @@ footer h3 {
   justify-content: space-between;
 }
 
-.social-media a svg {
+.social-media a img {
   opacity: 0.6;
   transition: all 0.3s;
 }
 
-.social-media a svg:hover {
+.social-media a img:hover {
   opacity: 1;
 }
 
@@ -500,7 +500,7 @@ footer h3 {
   .footer-row-1 .footer-info {
     text-align: center;
   }
-  .logo-box svg {
+  .logo-box img {
     width: 80px;
   }
   .footer-contact-info > * {
