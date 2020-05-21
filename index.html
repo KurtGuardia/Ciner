@@ -277,7 +277,6 @@
         <div id="overlay"></div>
       </section>
       <!-- ________________________________ Informacion ________________________________ -->
-      <!--Added a comment for testing purposes-->
       <section id="info" class="info">
         <div class="info__bubbles">
           <h2>INFORMACIÓN</h2>
@@ -917,12 +916,19 @@
           <form name="contact" method="POST" data-netlify="true">
             <input type="text" name="nombre" placeholder="Nombre" required />
             <input type="email" name="email" placeholder="Email" required />
-            <input
-              type="number"
-              name="numero"
-              placeholder="Teléfono"
-              required
-            />
+            <div class="phone">
+              <input
+                type="number"
+                name="numero"
+                placeholder="Codigo país"
+                id="extension"
+              /><input
+                type="number"
+                name="numero"
+                placeholder="Teléfono"
+                required
+              />
+            </div>
             <textarea
               name="mensaje"
               rows="4"

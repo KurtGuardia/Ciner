@@ -659,6 +659,13 @@ section .enlaces {
   background-position: center;
 }
 
+.phone {
+  display: flex;
+}
+#extension {
+  width: 50%;
+}
+
 /* ___________________________________ Aliados ___________________________________ */
 
 .aliados {
