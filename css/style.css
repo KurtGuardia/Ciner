@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
 
 /* ___________________________________ GENERAL ___________________________________ */
 * {
@@ -17,8 +17,21 @@ html {
   background-color: #1098a8;
 }
 
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #1098a8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffc75e;
+  border-radius: 10px;
+}
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #1f2635;
   color: #555;
   font-weight: 300;
@@ -71,7 +84,10 @@ header #darkfilter {
   width: 100%;
   max-width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  );
 }
 
 .row {
@@ -501,7 +517,10 @@ section h2 {
   margin-top: 1.7rem;
 }
 .info__biblio {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
     url(/resources/images/biblioteca-bg.webp);
   background-size: cover;
   width: 100%;
@@ -671,7 +690,10 @@ section .enlaces {
 .aliados {
   max-width: 100vw;
   padding: 3rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
     url(../resources/images/aliados-bg.webp);
   background-size: cover;
 }
@@ -903,7 +925,7 @@ footer {
 }
 
 /*_____ Tablets portrait mode _____*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;
   }
