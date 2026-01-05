@@ -46,48 +46,64 @@ document.querySelectorAll(".downarrow")
     }));
 
 /*Toggling Articulos and Noticias*/
-document.getElementById("articulos").addEventListener("click", function(e) {
-    const sectionArt = document.querySelector(".articles");
-    const sectionNws = document.querySelector(".news");
+const articulosTab = document.getElementById("articulos");
+const noticiasTab = document.getElementById("noticias");
+const sectionArt = document.querySelector(".articles");
+const sectionNws = document.querySelector(".news");
 
-    if(sectionArt.classList.contains("hidden")) {
+const setTabParam = (tabValue) => {
+    const url = new URL(window.location.href);
+    url.searchParams.set("tab", tabValue);
+    history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+};
+
+const showArticulos = () => {
+    if (sectionArt.classList.contains("hidden")) {
         sectionArt.classList.remove("hidden");
         sectionArt.classList.add("shown");
-        sectionNws.classList.add("hidden")
-        document.getElementById("articulos").classList.add("inDisplay") //For the underline in the Title
-        document.getElementById("noticias").classList.remove("inDisplay")        
+        sectionNws.classList.add("hidden");
+        articulosTab.classList.add("inDisplay"); //For the underline in the Title
+        noticiasTab.classList.remove("inDisplay");
     }
-
-    const all = document.querySelectorAll(".text")
+    setTabParam("articulos");
+    const all = document.querySelectorAll(".text");
     all.forEach(a => {
         a.classList.remove("text_active");
-    })
+    });
 
     document.querySelectorAll(".downarrow")
-    .forEach(element => {
-        if(element.textContent == '⇧') {
-            element.textContent = '⇩';      //This is only here because the page always appears on Articulos
-        }
-    })
+        .forEach(element => {
+            if (element.textContent == '⇧') {
+                element.textContent = '⇩';      //This is only here because the page always appears on Articulos
+            }
+        });
+};
 
-
-});
-document.getElementById("noticias").addEventListener("click", function() {
-    const sectionNws = document.querySelector(".news");
-    const sectionArt = document.querySelector(".articles");
-    if(sectionNws.classList.contains("hidden")) {
+const showNoticias = () => {
+    if (sectionNws.classList.contains("hidden")) {
         sectionNws.classList.remove("hidden");
         sectionNws.classList.add("shown");
         sectionArt.classList.add("hidden");
-        document.getElementById("noticias").classList.add("inDisplay")
-        document.getElementById("articulos").classList.remove("inDisplay")
+        noticiasTab.classList.add("inDisplay");
+        articulosTab.classList.remove("inDisplay");
     }
 
-    const all = document.querySelectorAll(".text")
+    setTabParam("noticias");
+    const all = document.querySelectorAll(".text");
     all.forEach(a => {
         a.classList.remove("text_active");
-    })
+    });
+};
 
+articulosTab.addEventListener("click", showArticulos);
+noticiasTab.addEventListener("click", showNoticias);
 
+// Allow linking directly to the Noticias tab via URL (e.g. ?tab=noticias or #noticias)
+const params = new URLSearchParams(window.location.search);
+const wantsNoticias = params.get("tab") === "noticias"
+    || params.get("section") === "noticias"
+    || window.location.hash.toLowerCase() === "#noticias";
 
-});
+if (wantsNoticias) {
+    showNoticias();
+}
